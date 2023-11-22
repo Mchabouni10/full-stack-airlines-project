@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const MainPage = () => {
-  return <div><h1>Main Page Content</h1></div>;
+  return (
+    <div className="homePage">
+      <h1>Wiki animals</h1>
+    </div>
+  );
 };
 
 export default MainPage;

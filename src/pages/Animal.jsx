@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -10,6 +12,21 @@ export default function Animal(props) {
     { name: "Elephant", habitat: "Forest" },
     { name: "Giraffe", habitat: "Savannah" },
     { name: "Penguin", habitat: "Antarctica" },
+    { name: "Cheetah", habitat: "Grasslands" },
+    { name: "Kangaroo", habitat: "Outback" },
+    { name: "Koala", habitat: "Eucalyptus Forest" },
+    { name: "Zebra", habitat: "Grasslands" },
+    { name: "Panda", habitat: "Bamboo Forest" },
+    { name: "Gorilla", habitat: "Rainforest" },
+    { name: "Polar Bear", habitat: "Arctic" },
+    { name: "Dolphin", habitat: "Ocean" },
+    { name: "Killer Whale", habitat: "Ocean" },
+    { name: "Hippopotamus", habitat: "Rivers" },
+    { name: "Koala", habitat: "Eucalyptus Forest" },
+    { name: "Pangolin", habitat: "Grasslands" },
+    { name: "Red Fox", habitat: "Woodlands" },
+    { name: "Sea Turtle", habitat: "Ocean" },
+    { name: "Puffin", habitat: "Cliffs" },
   ];
 
   // Filter animals based on the search term
@@ -21,7 +38,7 @@ export default function Animal(props) {
     <div className="animals">
       <h2>List of Animals</h2>
       <label>
-        Search for an animal:
+        <strong>Search for an animal:</strong>
         <input
           type="text"
           value={searchTerm}
@@ -31,7 +48,7 @@ export default function Animal(props) {
       <ul>
         {filteredAnimals.map((animal) => (
           <li key={animal.name}>
-            <Link to={`/animals/${animal.habitat}`}>{animal.name}</Link>
+            <Link to={`/animals/${animal.name}`}>{animal.name}</Link>
           </li>
         ))}
       </ul>
