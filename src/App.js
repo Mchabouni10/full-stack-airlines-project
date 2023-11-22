@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav';
+import MainPage from './pages/MainPage';
+import Animal from './pages/Animal';
+import AnimalDetails from './pages/AnimalDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ({ animalData }) => (
+  <div>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/animals" element={<Animal animals={animalData} />} />
+      <Route path="/animals/:name" element={<AnimalDetails animals={animalData} />} />
+    </Routes>
+  </div>
+);
 
 export default App;
