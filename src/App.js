@@ -6,11 +6,11 @@ import Airlines from './pages/Airlines';
 import AirlinesDetails from './pages/AirlinesDetails';
 import Airplanes from './pages/Airplanes';
 import AirplanesDetails from './pages/AirplanesDetailes';
+import Footer from './components/Footer';
 
 const App = ({ airlinesData }) => {
   const handleAirlinesSearch = (searchTerm) => {
     // Handle the navigation to AirlinesDetails with the search term
-    // You might want to use React Router's `useNavigate` hook here
   };
 
   return (
@@ -26,6 +26,7 @@ const App = ({ airlinesData }) => {
          <Route path="/airplanes" element={<Airplanes />} />
         <Route path="/airplanes-details/:manufacturer/:model" element={<AirplanesDetails />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

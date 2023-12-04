@@ -44,6 +44,7 @@ body{
 }
 
 .title2image {
+  position: relative;
   background-image: url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   margin-left: 5px; 
   height: 500px;
@@ -51,20 +52,22 @@ body{
 }
 
 .title3image {
+  position: relative;
   background-image: url('https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   margin-left: 5px; 
   height: 500px;
   width: 250px;
 }
 .title4image {
+  position: relative;
   background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   margin-left: 5px; 
   height: 500px;
   width: 250px;
 }
 .title1image h2 {
-  color: white; 
-  margin-top: 20px; 
+  color: #33a1ff; 
+  margin-top: 400px; 
   font-style: italic;
   font-size: 40px;
 }
@@ -73,7 +76,7 @@ body{
 
 .title2image h2 {
   color: #33a1ff; 
-  margin-top: 50%; 
+  margin-top: 240px; 
   font-style: italic;
   font-size: 40px;
 }
@@ -87,10 +90,12 @@ body{
 }
 
 .title4image h2 {
-  color: white; 
+  position: relative;
+  color: #333; 
   margin-top: 360px; 
   font-style: italic;
   font-size: 40px;
+  text-shadow: 0 3px 3px #fff;
 }
 
 .title1image:hover::after {
@@ -107,6 +112,47 @@ body{
   background-position: center;
 }
 
+.title2image:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1px;
+  height: 500px;
+  width: 335px;
+  z-index: 1;
+  background-image: url('https://images.unsplash.com/photo-1596468673770-99f3d7f4999f?q=80&w=2519&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+.title3image:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1px;
+  height: 500px;
+  width: 250px;
+  z-index: -1;
+  background-image: url('https://images.unsplash.com/photo-1517999349371-c43520457b23?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+.title4image:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1px;
+  height: 500px;
+  width: 250px;
+  z-index: -1;
+  background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
 
 
 
@@ -281,6 +327,7 @@ strong{
 /*====================== CSS for AIRPLANE PAGE================================*/
 .AirplanesList {
   max-width: 400px;
+  min-height: 230px;
   margin-top: 2%;
   margin-left: 35%;
 }
@@ -359,3 +406,34 @@ span {
   font-weight: bold;
   color: #3498db;
 }
+
+
+
+/*========================== CSS FOR THE FOOTER ========================*/
+  .footer1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    margin-top: 1%;
+    margin-bottom: 0;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+  }
+  .footer-section ul {
+    display: block;
+  }
+  .footer-section ul li:hover {
+    color: #333; 
+    background-color: white;
+    cursor: pointer;
+  }
