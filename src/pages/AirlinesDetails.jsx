@@ -30,7 +30,7 @@ const AirlinesDetails = () => {
 
   useEffect(() => {
     fetchAirlineData();
-  }, [apiUrl]);
+  }, []);
 
   const loaded = () => {
     return (

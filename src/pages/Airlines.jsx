@@ -11,9 +11,9 @@ function Airlines(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Assuming props.airlinessearch sends the search term to the server
+
     props.airlinessearch(formData.searchterm);
-    // Navigate to AirlinesDetails with the search term
+  
     navigate(`/airlines/${formData.searchterm}`);
   };
 

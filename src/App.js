@@ -4,6 +4,8 @@ import Nav from './components/Nav';
 import MainPage from './pages/MainPage';
 import Airlines from './pages/Airlines';
 import AirlinesDetails from './pages/AirlinesDetails';
+import Airplanes from './pages/Airplanes';
+import AirplanesDetails from './pages/AirplanesDetailes';
 
 const App = ({ airlinesData }) => {
   const handleAirlinesSearch = (searchTerm) => {
@@ -21,6 +23,8 @@ const App = ({ airlinesData }) => {
           element={<Airlines airlinessearch={handleAirlinesSearch} />}
         />
         <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
+         <Route path="/airplanes" element={<Airplanes />} />
+        <Route path="/airplanes-details/:manufacturer/:model" element={<AirplanesDetails />} />
       </Routes>
     </div>
   );
