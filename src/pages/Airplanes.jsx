@@ -24,7 +24,7 @@ function Airplanes() {
       return;
     }
 
-    // Redirect to the details page with the selected manufacturer and model
+   
     navigate(`/airplanes-details/${SelectManufacturer}/${SelectModel}`);
   };
 

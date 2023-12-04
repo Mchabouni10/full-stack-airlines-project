@@ -15,7 +15,16 @@ body{
 }
 .imagesContainer {
   display: flex;
+  position: relative;
   margin: 0;
+}
+
+.CompanyLogo{
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .title1image,
@@ -60,6 +69,8 @@ body{
   font-size: 40px;
 }
 
+
+
 .title2image h2 {
   color: #33a1ff; 
   margin-top: 50%; 
@@ -81,6 +92,31 @@ body{
   font-style: italic;
   font-size: 40px;
 }
+
+.title1image:hover::after {
+   content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 5px;
+  height: 500px;
+  width: 420px;
+  z-index: 1;
+  background-image: url('https://images.unsplash.com/photo-1561101904-da649fcbf03f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*============================== CSS for Nav Bar ===========================================*/
