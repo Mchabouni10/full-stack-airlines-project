@@ -2,18 +2,28 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav';
 import MainPage from './pages/MainPage';
-import Animal from './pages/Animal';
-import AnimalDetails from './pages/AnimalDetails';
+import Airlines from './pages/Airlines';
+import AirlinesDetails from './pages/AirlinesDetails';
 
-const App = ({ animalData }) => (
-  <div>
-    <Nav />
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/animals" element={<Animal animals={animalData} />} />
-      <Route path="/animals/:name" element={<AnimalDetails animals={animalData} />} />
-    </Routes>
-  </div>
-);
+const App = ({ airlinesData }) => {
+  const handleAirlinesSearch = (searchTerm) => {
+    // Handle the navigation to AirlinesDetails with the search term
+    // You might want to use React Router's `useNavigate` hook here
+  };
+
+  return (
+    <div>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route
+          path="/airlines"
+          element={<Airlines airlinessearch={handleAirlinesSearch} />}
+        />
+        <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
+      </Routes>
+    </div>
+  );
+};
 
 export default App;

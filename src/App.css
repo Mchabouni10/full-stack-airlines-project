@@ -1,0 +1,264 @@
+body{
+  background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  margin: 0;
+  height: 100vh;
+}
+/*======== CSS for the home Page ================*/
+
+.MainPage{
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+.imagesContainer {
+  display: flex;
+  margin: 0;
+}
+
+.title1image,
+.title2image,
+.title3image,
+.title4image{
+  background-size: cover;
+  margin-left: 2px; 
+}
+
+.title1image {
+  background-image: url('https://images.unsplash.com/photo-1544975331-f15ed1a1c28f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  margin-left: 5px;
+  height: 500px;
+  width: 420px;
+}
+
+.title2image {
+  background-image: url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  margin-left: 5px; 
+  height: 500px;
+  width: 335px;
+}
+
+.title3image {
+  background-image: url('https://images.unsplash.com/photo-1632938987892-599c3a226c1d?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  margin-left: 5px; 
+  height: 500px;
+  width: 250px;
+}
+.title4image {
+  background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  margin-left: 5px; 
+  height: 500px;
+  width: 250px;
+}
+.title1image h2 {
+  color: white; 
+  margin-top: 20px; 
+  font-style: italic;
+  font-size: 40px;
+}
+
+.title2image h2 {
+  color: #33a1ff; 
+  margin-top: 50%; 
+  font-style: italic;
+  font-size: 40px;
+}
+
+.title3image h2 {
+  color: #333; 
+  margin-top: 320px; 
+  font-style: italic;
+  font-size: 40px;
+  text-shadow: 0 3px 3px #fff;
+}
+
+.title4image h2 {
+  color: white; 
+  margin-top: 360px; 
+  font-style: italic;
+  font-size: 40px;
+}
+
+
+/*============================== CSS for Nav Bar ===========================================*/
+nav {
+  background-color: #333;
+  border-radius: 1px;
+  margin: 0%;
+  padding: 0.1%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.animals {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(251, 254, 251);
+  font-weight: bold;
+}
+
+li a:hover {
+  color: rgb(4, 4, 4);
+  
+}
+
+.display{
+background-color: #fff;
+margin-right: 70%;
+margin-left: 5%;
+text-align: center;
+}
+strong{
+  color: #fff;
+}
+
+
+/*==================== CSS for Airlines Search ====================*/
+.submitAirlines {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inputAirlines {
+  width: 500px; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  font: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.submitAirlines input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitAirlines input[type="submit"]:hover {
+  color: #333;
+  background-color:gray;
+}
+
+
+/*===================== CSS Airlines Details  =========================*/
+.display {
+  display: inline;
+  text-align: center;
+  margin: 1%;
+}
+
+.display h1 {
+  color: #333;
+}
+
+.airline-container {
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: 1%;
+}
+
+.airline-name {
+  color: #0066cc;
+}
+
+.airline-code {
+  margin: 10px 0;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.company-logo {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 10px 0;
+}
+.airline-code span {
+  color: red; 
+  margin-right: 5px; 
+}
+
+.fleet-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fleet-info h3 {
+  color: #0066cc;
+}
+
+.fleet-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fleet-info li {
+  margin-bottom: 5px;
+  margin-right: 20px; 
+  white-space: nowrap; 
+}
+
+.fleet-info li span {
+  margin-left: 5px; 
+  color: red;
+  font-weight: bold;
+}
