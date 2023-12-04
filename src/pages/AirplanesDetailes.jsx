@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const AirplanesDetails = () => {
   const apiKey = 'lulGyHOBLEnPvGZ0W2NWZhJWbsiX2RTbYMHhwMZA';
-  const { manufacturer, model } = useParams();
+  const { manufacturer, model } = useParams(); //useParams to bring my data 
   const [aircraftDetail, setAircraftDetail] = useState({});
   const [aircraftLoaded, setAircraftLoaded] = useState(false);
 
@@ -36,19 +36,20 @@ const AirplanesDetails = () => {
   }, [manufacturer, model]);
 
   const loaded = () => {
-    // Check if aircraftDetail is undefined or empty
+    
     if (!aircraftDetail || !aircraftDetail.length) {
-      return <div>No details available for this aircraft.</div>;
+      return <div><h1>No details available for this aircraft.</h1></div>; // Check if aircraftDetail is undefined or empty
     }
 
-    const details = aircraftDetail[0];
+    const details = aircraftDetail[0]; // because we have only Object in array with and his inderx[0]
 
     return (
+      // display the Airplane Details like name, manufacturer and so on 
       <div className="AirplaneDetailes">
         <h1>Aircraft Info</h1>
         <div className="aircraft-container">
           <h1>
-            manufacturer: <span>{details?.manufacturer}</span>
+            manufacturer: <span>{details?.manufacturer}</span> 
           </h1>
           <h1>
             model: <span>{details?.model}</span>
