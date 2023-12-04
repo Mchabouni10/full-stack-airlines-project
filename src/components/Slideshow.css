@@ -1,0 +1,36 @@
+.SlideShowCSS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%; 
+    max-height: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .previousButtonSlideshow,
+  .nextButtonSlideshow {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .previousButtonSlideshow:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  .nextButtonSlideshow:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .slidshowimages {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; 
+    width: 100%; 
+    max-height: 500px; 
+  }
