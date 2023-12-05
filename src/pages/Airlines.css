@@ -40,11 +40,11 @@
   .displayAirlinesDEtailes {
     display: inline;
     text-align: center;
-    margin: 50%;
   }
   
   .display h1 {
     color: #333;
+    margin-top: 5px;
   }
   
   .airline-container {
