@@ -5,7 +5,6 @@ const MainPage = () => {
   return (
     <>
       <div className="MainPage">
-        <img className="CompanyLogo" src="companyLogo.png" alt="Compaby Logo" />
         <div className="imagesContainer">
           <div className="title1image">
             <h2>Each airport is piece of Art</h2>

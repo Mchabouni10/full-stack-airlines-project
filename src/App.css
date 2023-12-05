@@ -22,13 +22,7 @@ body{
   margin: 0;
 }
 
-.CompanyLogo{
-  height: 50%;
-  width: 20%;
-  margin: 1%;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+
 
 .title1image,
 .title2image,

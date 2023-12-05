@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Nav.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = (props) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -25,8 +25,11 @@ const Nav = (props) => {
   }, []);
 
   return (
-    <nav id="nav" className={isSticky ? 'sticky' : ''}>
+    <nav id="nav" className={isSticky ? "sticky" : ""}>
       <ul>
+        <li>
+        <img className="CompanyLogo" src="companyLogo.png" alt="Compaby Logo" />
+        </li>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -45,4 +48,3 @@ const Nav = (props) => {
 };
 
 export default Nav;
-
