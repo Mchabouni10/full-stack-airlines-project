@@ -36,7 +36,10 @@ const MainPage = () => {
 
         {/* put another div for marketking*/}
         <div className="Second-part-homepage">
-          
+          <img className='FlyandEntrtainImage' src="https://images.unsplash.com/photo-1665832102899-2b3f12cf991e?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+          <h1 className="fly">Fly</h1>
+          <h1 className="and">&</h1>
+          <h1 className="entertain">Entertain</h1>
         </div>
 
 
