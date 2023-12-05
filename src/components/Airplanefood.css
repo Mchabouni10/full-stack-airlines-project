@@ -1,0 +1,19 @@
+.food-container {
+    overflow-x: auto;
+  }
+  
+  .food-list {
+    list-style: none;
+    display: flex;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .food-list li {
+    margin-right: 10px; /* Adjust the spacing between images */
+  }
+  
+  .food-list img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+  }

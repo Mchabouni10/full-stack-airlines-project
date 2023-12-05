@@ -3,19 +3,19 @@ import React from 'react';
 function Airplanefood() {
   return (
     <div>
-      <h1>Serve what you deserve</h1>
+      <h1>Serve what you Deserve</h1>
       <div>
         <ul>
-          <li><img src="/image1.jpg" alt="Image 1" /></li>
-          <li><img src="/image2.jpg" alt="Image 2" /></li>
-          <li><img src="/image3.jpg" alt="Image 3" /></li>
-          <li><img src="/image4.jpg" alt="Image 4" /></li>
-          <li><img src="/image5.jpg" alt="Image 5" /></li>
-          <li><img src="/image6.jpg" alt="Image 6" /></li>
-          <li><img src="/image7.jpg" alt="Image 7" /></li>
-          <li><img src="/image8.jpg" alt="Image 8" /></li>
-          <li><img src="/image9.jpg" alt="Image 9" /></li>
-          <li><img src="/image10.jpg" alt="Image 10" /></li>
+          <li><img src="/food1.jpg" alt="food 1" /></li>
+          <li><img src="/food2.jpg" alt="food 2" /></li>
+          <li><img src="/food3.jpg" alt="food 3" /></li>
+          <li><img src="/food4.jpg" alt="food 4" /></li>
+          <li><img src="/food5.jpg" alt="food 5" /></li>
+          <li><img src="/food6.jpg" alt="food 6" /></li>
+          <li><img src="/food7.jpg" alt="food 7" /></li>
+          <li><img src="/food8.jpg" alt="food 8" /></li>
+          <li><img src="/food9.jpg" alt="food 9" /></li>
+          <li><img src="/food10.jpg" alt="food 10" /></li>
         </ul>
       </div>
     </div>
