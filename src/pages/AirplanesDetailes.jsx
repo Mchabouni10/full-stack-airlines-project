@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Airplanes.css';
 
 const AirplanesDetails = () => {
   const apiKey = 'lulGyHOBLEnPvGZ0W2NWZhJWbsiX2RTbYMHhwMZA';

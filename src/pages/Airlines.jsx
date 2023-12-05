@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import './Airlines.css';
 
 function Airlines(props) {
   const navigate = useNavigate();
@@ -18,8 +19,8 @@ function Airlines(props) {
   };
 
   return (
-    <div className="submitAirlines">
-      <form onSubmit={handleSubmit}>
+    <div className="AirlinesContainer">
+      <form className="submitAirlines" onSubmit={handleSubmit}>
         <input
           className="inputAirlines"
           type="text"

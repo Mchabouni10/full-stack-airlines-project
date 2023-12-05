@@ -11,7 +11,10 @@ body{
 .MainPage{
   text-align: center;
   color: #333;
-  margin: 0;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 .imagesContainer {
   display: flex;
@@ -162,89 +165,6 @@ body{
 
 
 
-
-/*====================== CSS for AIRPLANE PAGE================================*/
-.AirplanesList {
-  max-width: 400px;
-  min-height: 230px;
-  margin-top: 2%;
-  margin-left: 35%;
-}
-
-.airplaneLebel,
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.airplanesSelect {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #c4c9c4;
-  color: #333;
-}
-
-
-/*============== CSS FOR AIRPLANES DETAILS =====================*/
-
-
-.AirplaneDetailes {
-  position: relative; 
-  margin: 20px;
-  padding: 20px;
-  background-image: url('https://plus.unsplash.com/premium_photo-1661934254089-24e0d14302ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWlycGxhbmUlMjBwYXJ0c3xlbnwwfHwwfHx8MA%3D%3D');
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden; 
-}
-
-.AirplaneDetailes::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.6); 
-  z-index: 1; 
-}
-
-.aircraft-container {
-  position: relative;
-  z-index: 2; 
-  margin-top: 15px;
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 29px;
-  margin: 10px 0;
-  color: rgb(7, 0, 0);
-  font-weight: bold;
-}
-
-span {
-  font-weight: bold;
-  color: #3498db;
-}
 
 
 

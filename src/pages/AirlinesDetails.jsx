@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Airlines.css';
 
 const AirlinesDetails = () => {
   const apiKey = "lulGyHOBLEnPvGZ0W2NWZhJWbsiX2RTbYMHhwMZA";
@@ -34,7 +35,7 @@ const AirlinesDetails = () => {
 
   const loaded = () => {
     return (
-        <div className="display">
+        <div className="displayAirlinesDEtailes">
         <h1>Airlines Info</h1>
         {airlineDetail.map((airline, index) => (
           <div key={index} className="airline-container">

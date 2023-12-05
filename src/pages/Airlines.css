@@ -1,4 +1,10 @@
 /*==================== CSS for Airlines Search ====================*/
+.AirlinesContainer{
+    margin-top: 90px;
+    margin-bottom: 400px;
+}
+
+
 .submitAirlines {
     text-align: center;
     margin-top: 20px;
@@ -31,10 +37,10 @@
   
   
   /*===================== CSS Airlines Details  =========================*/
-  .display {
+  .displayAirlinesDEtailes {
     display: inline;
     text-align: center;
-    margin: 1%;
+    margin: 50%;
   }
   
   .display h1 {

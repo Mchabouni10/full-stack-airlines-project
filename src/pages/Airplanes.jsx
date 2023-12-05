@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import './Airplanes.css';
 
 function Airplanes() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ function Airplanes() {
 
   return (
     <div className="AirplanesList">
-      <form onSubmit={handleSubmit}>
+      <form className='AirplaneForm' onSubmit={handleSubmit}>
         <label className="airplaneLebel">
           <select
             className="airplanesSelect"
