@@ -38,13 +38,18 @@
   
   /*===================== CSS Airlines Details  =========================*/
   .displayAirlinesDEtailes {
-    display: inline;
+    /* display: inline; */
     text-align: center;
+    margin-top: 100px;
+  }
+  .display {
+    margin-top: 50px;
+
   }
   
   .display h1 {
     color: #333;
-    margin-top: 5px;
+    margin-top: 30px;
   }
   
   .airline-container {

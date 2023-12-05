@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/" element={<MainPage />} />
         <Route
           path="/airlines"
-          element={<Airlines airlinesSearch={handleAirlinesSearch} />}
+          element={<Airlines airlinessearch={handleAirlinesSearch} />} // Correct prop name
         />
         <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
         <Route
