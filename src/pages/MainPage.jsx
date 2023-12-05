@@ -1,5 +1,6 @@
 import React from "react";
 import Slideshow from "../components/Slideshow";
+import Airplanefood from "../components/Airplanefood";
 import "./MainPage.css";
 
 const MainPage = () => {
@@ -48,6 +49,7 @@ const MainPage = () => {
 
 
       </div>
+      <Airplanefood />
       <Slideshow />
     </>
   );

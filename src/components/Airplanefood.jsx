@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Airplanefood.css";
 
 function Airplanefood() {
   return (
     <div>
       <h1>Serve what you Deserve</h1>
-      <div>
+      <div className='food-list-container'>
         <ul>
           <li><img src="/food1.jpg" alt="food 1" /></li>
           <li><img src="/food2.jpg" alt="food 2" /></li>
