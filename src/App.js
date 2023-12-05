@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Link } from "react-router-dom";
 import Nav from "./components/Nav";
 import MainPage from "./pages/MainPage";
 import Airlines from "./pages/Airlines";
@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import AirportsDetails from "./pages/AirportsDetails";
 import Airports from "./pages/Airports";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const App = () => {
   const handleAirlinesSearch = (searchTerm) => {
@@ -41,6 +42,7 @@ const App = () => {
           element={<AirplanesDetails />}
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
     </div>

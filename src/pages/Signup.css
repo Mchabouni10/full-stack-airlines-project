@@ -1,10 +1,10 @@
-.login-container{
+.Signup-page{
     margin-top: 10%;
     margin-left: 40%;
 }
 
 
-.login-container form {
+.Signup-page form {
     max-width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -12,24 +12,22 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .login-container label {
+  .Signup-page label {
     display: block;
     margin-bottom: 8px;
   }
-
-  .login-container input {
+  .Signup-page input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
   }
-
-  .login-container p{
+  .Signup-page p{
     text-align: center;
     margin-right: 60%;
   }
 
-  .login-container button {
+  .Signup-page button {
     background-color: #33a1ff;
     color: #fff;
     padding: 10px;
@@ -39,7 +37,7 @@
     width: 100%;
   }
 
-  .login-container button :hover {
+  .Signup-page button :hover {
     background-color: #fff;
     color: #33a1ff;
     padding: 10px;
@@ -48,3 +46,4 @@
     cursor: pointer;
     width: 100%;
   }
+  
