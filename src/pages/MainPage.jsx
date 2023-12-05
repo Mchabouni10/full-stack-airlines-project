@@ -5,6 +5,7 @@ const MainPage = () => {
   return (
     <>
       <div className="MainPage">
+      <div className="nav2">text here</div>
         <div className="imagesContainer">
           <div className="title1image">
             <h2>Each airport is piece of Art</h2>
