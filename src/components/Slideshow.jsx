@@ -1,5 +1,5 @@
 
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import './Slideshow.css';
 
 const initialState = {
@@ -23,21 +23,32 @@ const actionTypes = {
   PREVIOUS: 'PREVIOUS',
 };
 
+const localStorageKey = 'slideshowState';
+
 const reducer = (state, action) => {
   switch (action.type) {
     case actionTypes.NEXT:
-      return {
-        ...state,
-        currentIndex: (state.currentIndex + 1) % state.images.length,
-      };
+      const nextIndex = (state.currentIndex + 1) % state.images.length;
+      saveStateToLocalStorage({ ...state, currentIndex: nextIndex });
+      return { ...state, currentIndex: nextIndex };
+
     case actionTypes.PREVIOUS:
-      return {
-        ...state,
-        currentIndex: (state.currentIndex - 1 + state.images.length) % state.images.length,
-      };
+      const previousIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
+      saveStateToLocalStorage({ ...state, currentIndex: previousIndex });
+      return { ...state, currentIndex: previousIndex };
+
     default:
       return state;
   }
+};
+
+const saveStateToLocalStorage = (state) => {
+  localStorage.setItem(localStorageKey, JSON.stringify(state));
+};
+
+const loadStateFromLocalStorage = () => {
+  const storedState = localStorage.getItem(localStorageKey);
+  return storedState ? JSON.parse(storedState) : initialState;
 };
 
 const ImageCarousel = ({ images, currentIndex, nextImage, previousImage }) => {
@@ -55,7 +66,11 @@ const ImageCarousel = ({ images, currentIndex, nextImage, previousImage }) => {
 };
 
 const Slideshow = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState, loadStateFromLocalStorage);
+
+  useEffect(() => {
+    saveStateToLocalStorage(state);
+  }, [state]);
 
   const nextImage = () => {
     dispatch({ type: actionTypes.NEXT });
