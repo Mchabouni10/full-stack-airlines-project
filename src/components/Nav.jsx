@@ -37,7 +37,7 @@ const Nav = (props) => {
           <Link to="/airlines">Airlines</Link>
         </li>
         <li>
-          <Link to="/airport">Airports</Link>
+          <Link to="/airports">Airports</Link>
         </li>
       </ul>
     </nav>

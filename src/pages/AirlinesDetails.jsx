@@ -53,7 +53,7 @@ const AirlinesDetails = () => {
               <div className='fleet-info'>
                 <h3>Fleet</h3>
                 <ul>
-                  {Object.entries(airline.fleet).map(([type, count]) => (
+                  {Object.entries(airline.fleet).map(([type, count]) => ( //go over object and display all data
                     <li key={type}>{type}: <span>{count}</span></li>
                   ))}
                 </ul>

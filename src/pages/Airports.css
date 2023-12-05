@@ -1,0 +1,70 @@
+.AirportContainer{
+    margin-top: 90px;
+    margin-bottom: 400px;
+}
+
+
+.submitAirport {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .inputAirport {
+    width: 500px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    font: white;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .submitAirport input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitAirport
+   input[type="submit"]:hover {
+    color: #333;
+    background-color:gray;
+  }
+
+
+  /*======================== CSS FOR AIRPORT DETAILS ============================*/
+
+  .displayAirportsDetails {
+    margin-top: 100px; 
+    
+  }
+  
+  airport-container {
+    border: 1px solid #ddd;
+    background-image: url('https://images.unsplash.com/photo-1561131668-f63504fc549d?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for background opacity */
+    padding: 15px;
+    margin: 50px;
+    opacity: 1; /* Set the opacity for the entire container */
+  }
+  
+  .airport-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .airport-code,
+  .airport-location,
+  .airport-elevation,
+  .airport-latitude,
+  .airport-longitude,
+  .airport-timezone {
+    margin-bottom: 8px;
+    text-align: center;
+  }
