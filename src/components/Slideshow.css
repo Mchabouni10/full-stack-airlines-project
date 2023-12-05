@@ -17,7 +17,7 @@
     cursor: pointer;
     font-size: 16px;
     margin: 2px;
-    width: 100px; /* Adjust the width as needed */
+    width: 100px; 
   }
   
   .previousButtonSlideshow:disabled {
