@@ -9,6 +9,7 @@ import AirplanesDetails from "./pages/AirplanesDetailes";
 import Footer from "./components/Footer";
 import AirportsDetails from "./pages/AirportsDetails";
 import Airports from "./pages/Airports";
+import Login from "./pages/Login";
 
 const App = () => {
   const handleAirlinesSearch = (searchTerm) => {
@@ -39,6 +40,7 @@ const App = () => {
           path="/airplanes-details/:manufacturer/:model"
           element={<AirplanesDetails />}
         />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>

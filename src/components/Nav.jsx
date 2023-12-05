@@ -28,7 +28,11 @@ const Nav = (props) => {
     <nav id="nav" className={isSticky ? "sticky" : ""}>
       <ul>
         <li>
-          <img className="CompanyLogo" src="companyLogo.png" alt="Compaby Logo" />
+          <img
+            className="CompanyLogo"
+            src="companyLogo.png"
+            alt="Compaby Logo"
+          />
         </li>
         <li>
           <Link to="/">Home</Link>
@@ -43,7 +47,9 @@ const Nav = (props) => {
           <Link to="/airports">Airports</Link>
         </li>
         <li>
-        <img className="LoginLogo" src="loginlogo.png" alt="Compaby Logo" />
+          <a href="/login">
+            <img className="LoginLogo" src="loginlogo.png" alt="Company Logo" />
+          </a>
         </li>
       </ul>
     </nav>
