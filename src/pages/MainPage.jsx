@@ -1,11 +1,12 @@
 import React from "react";
 import Slideshow from "../components/Slideshow";
+import './MainPage.css';
 
 const MainPage = () => {
   return (
     <>
       <div className="MainPage">
-      <div className="nav2">text here</div>
+      <div className="nav2"><h3>Manage Airlines | Visit Aiports | Know Airlplanes</h3></div>
         <div className="imagesContainer">
           <div className="title1image">
             <h2>Each airport is piece of Art</h2>

@@ -42,6 +42,9 @@ const Nav = (props) => {
         <li>
           <Link to="/airports">Airports</Link>
         </li>
+        <li>
+        <img className="LoginLogo" src="loginlogo.png" alt="Compaby Logo" />
+        </li>
       </ul>
     </nav>
   );

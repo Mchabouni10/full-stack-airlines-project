@@ -41,14 +41,19 @@ li a {
 }
 
 li a:hover {
-  color: rgb(4, 4, 4);
+  color: #33a1ff;
 }
 
 .CompanyLogo {
   height: 30px; 
   width: auto; 
   border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.LoginLogo {
+  height: 40px; 
+  width: 40px; 
+  border-radius: 50%;
 }
 
 .display {
