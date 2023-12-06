@@ -6,7 +6,11 @@ body{
   margin: 0;
   height: 100vh;
 }
-/*======== CSS for the home Page ================*/
+/*======== Log in inside page ================*/
+.Inside-Login-Page{
+  margin-top: 50px;
+  text-align: center;
+}
 
 
 

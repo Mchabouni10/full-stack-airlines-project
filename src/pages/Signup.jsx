@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import "./Signup.css";
+import { useNavigate } from 'react-router-dom';
+import './Signup.css';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -10,15 +11,20 @@ const SignUp = () => {
     dateOfBirth: '',
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // struggle with this======================================
-    localStorage.setItem("userData", JSON.stringify(formData));
-    console.log("Form submitted:", formData);
+    
+    // Save data to localStorage
+    localStorage.setItem('userData', JSON.stringify(formData));
+
+    // Redirect to login page
+    navigate('/login');
   };
 
 

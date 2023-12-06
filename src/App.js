@@ -11,6 +11,7 @@ import AirportsDetails from "./pages/AirportsDetails";
 import Airports from "./pages/Airports";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Succlog from "./pages/Succlog";
 
 const App = () => {
   const handleAirlinesSearch = (searchTerm) => {
@@ -43,6 +44,7 @@ const App = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/Succlog" element={<Succlog />} />
       </Routes>
       <Footer />
     </div>
