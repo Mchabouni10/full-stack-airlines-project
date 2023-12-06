@@ -14,33 +14,40 @@ ul {
   padding: 0;
   margin-right: 10%;
   margin-left: 10% ;
-  
   align-items: center; 
 }
 
-li {
-  margin: 0;
-}
-
-a {
-  font-size: 20px;
+ul li a {
+  position: relative; 
+  display: flex;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  transition: .5s;
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
 }
 
-li a {
-  text-decoration: none;
-  color: rgb(251, 254, 251);
-  font-weight: bold;
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #33a1ff;
 }
 
-li a:hover {
+ul li a:hover {
   color: #33a1ff;
+  box-shadow: 0 0 5px #33a1ff;
+  text-shadow: 0 0 5px #33a1ff;
 }
 
 .CompanyLogo {
@@ -96,9 +103,18 @@ strong {
     margin-left: 5%;
   }
 
-  li a:hover {
-    color: #333;
+  ul li a {
+    font-size: 20px;
   }
+
+
+
+  ul li a:hover {
+    color: #333;
+    box-shadow: 0 0 5px #33a1ff;
+    text-shadow: 0 0 5px #333;
+  }
+  
 
   .CompanyLogo {
     height: 20px;
@@ -125,15 +141,7 @@ strong {
 
 
 
-  ul {
-    align-items: flex-start;
-  }
-
-  li a:hover {
-    color: #33a1ff;
-  }
-
-  a {
-    font-size: 16px;
+  ul li a {
+    font-size: 15px;
   }
 }

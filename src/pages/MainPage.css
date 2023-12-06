@@ -35,6 +35,8 @@
   .title3image,
   .title4image{
     background-size: cover;
+    max-width: 90%;
+    max-width: 90%;
     margin-left: 2px; 
     opacity: 0.9;
     border: 1px solid #ddd; 
@@ -42,18 +44,18 @@
   
   .title1image {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1544975331-f15ed1a1c28f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('/public/airportnight.jpg');
     margin-left: 5px;
     height: 565px;
     width: 420px;
     transition: transform 1s ease; 
   }
   
-  .title1image:hover {
+  /* .title1image:hover {
     transform: scale(1.1); 
-  }
+  } */
   
-  .title1image:hover::after {
+  /* .title1image:hover::after {
     content: '';
     position: absolute;
     top: 0;
@@ -69,20 +71,23 @@
     border: 1px solid #ddd;
     transform: rotateY(180deg);
     transition: transform 1s ease; 
-  }
+  } */
 
 
 
   
   .title2image {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('/public/earthnight.jpg');
     margin-left: 5px; 
     height: 565px;
     width: 335px;
   }
 
-  .title2image:hover::after {
+  /* .title2image:hover {
+    transform: scale(1.1); 
+  } */
+  /* .title2image:hover::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +99,7 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #ddd; 
-  }
+  } */
 
 
 
@@ -111,14 +116,17 @@
     height: 565px;
     width: 250px;
   }
+
+
   .title4image {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    margin-left: 5px; 
+    background-image: url('/public/parisnight.jpg');
     height: 565px;
     width: 250px;
     margin-right: 5px;
   }
+
+
   .title1image h2 {
     color: #33a1ff; 
     margin-top: 400px; 
@@ -152,7 +160,7 @@
     text-shadow: 0 3px 3px #fff;
   }
   
-  .title3image:hover::after {
+  /* .title3image:hover::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -164,9 +172,9 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #ddd; 
-  }
+  } */
   
-  .title4image:hover::after {
+  /* .title4image:hover::after {
     content: '';
     position: absolute;
     top: 0;
@@ -179,7 +187,7 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #ddd; 
-  }
+  } */
 
   .Second-part-homepage{
     background-image: url('https://images.unsplash.com/photo-1608023136037-626dad6c6188?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
