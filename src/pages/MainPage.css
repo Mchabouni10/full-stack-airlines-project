@@ -8,7 +8,7 @@
   }
   
   .nav2 {
-    background-color: #d6d5d5;
+    background-color: white;
     border-radius: 1px;
     margin: 0;
     padding-top: 0.1%;
@@ -18,7 +18,7 @@
   }
 
   .nav2 h3{
-    color: #33a1ff;
+    color: #333;
     font-style: italic;
   }
 
@@ -128,8 +128,8 @@
 
 
   .title1image h2 {
-    color: #33a1ff; 
-    margin-top: 400px; 
+    color: white; 
+    margin-top: 500px; 
     font-style: italic;
     font-size: 40px;
   }
@@ -137,57 +137,26 @@
   
   
   .title2image h2 {
-    color: #33a1ff; 
-    margin-top: 240px; 
+    color: white; 
+    margin-top: 345px; 
     font-style: italic;
     font-size: 40px;
   }
   
   .title3image h2 {
-    color: #333; 
-    margin-top: 320px; 
+    color: white; 
+    margin-top: 500px; 
     font-style: italic;
     font-size: 40px;
-    text-shadow: 0 3px 3px #fff;
   }
   
   .title4image h2 {
-    position: relative;
-    color: #333; 
-    margin-top: 360px; 
+    color: white; 
+    margin-top: 500px; 
     font-style: italic;
     font-size: 40px;
-    text-shadow: 0 3px 3px #fff;
   }
   
-  /* .title3image:hover::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1px;
-    height: 565px;
-    width: 250px;
-    z-index: -1;
-    background-image: url('https://images.unsplash.com/photo-1517999349371-c43520457b23?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #ddd; 
-  } */
-  
-  /* .title4image:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1px;
-    height: 565px;
-    width: 250px;
-    z-index: -1;
-    background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #ddd; 
-  } */
 
   .Second-part-homepage{
     background-image: url('https://images.unsplash.com/photo-1608023136037-626dad6c6188?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
