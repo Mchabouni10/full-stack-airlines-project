@@ -88,7 +88,7 @@ const SignUp = () => {
         <button type="submit">Sign Up</button>
         <div>
           <p>Already have an account? <Link to="/login">Login</Link></p>
-          <p>Have an account? <Link to="/Succlog">Continue to Succlog</Link></p>
+          {/* <p>Have an account? <Link to="/Succlog">Continue to Succlog</Link></p> */}
         </div>
       </form>
     </div>

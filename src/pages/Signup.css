@@ -47,3 +47,25 @@
     width: 100%;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .Signup-page{
+      margin-top: 12%;
+      margin-left: 20%;
+  }
+  
+  
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 501px) {
+    .Signup-page{
+      margin-top: 7%;
+      margin-left: 37%;
+  }
+  }
