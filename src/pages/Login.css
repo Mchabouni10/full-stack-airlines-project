@@ -48,3 +48,38 @@
     cursor: pointer;
     width: 100%;
   }
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .login-container{
+      margin-top: 15%;
+      margin-left: 25%;
+  }
+  
+  
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 501px) {
+    .login-container{
+      margin-top: 15%;
+      margin-left: 10%;
+  }
+ 
+  
+  }
+

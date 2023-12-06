@@ -4,7 +4,7 @@ import "./Airplanefood.css";
 function Airplanefood() {
   return (
     <div>
-      <h1 className='food-title'>Serve what you Deserve</h1>
+      <h1 className='food-title'>SERVE WHAT YOU DESERVE</h1>
       <div className='food-list-container'>
         <ul>
           <li><img src="/food1.jpg" alt="food 1" /></li>
