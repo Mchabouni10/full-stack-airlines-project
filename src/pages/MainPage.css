@@ -35,16 +35,16 @@
   .title3image,
   .title4image{
     background-size: cover;
-    max-width: 90%;
-    max-width: 90%;
+    max-width: 100%;
+
     margin-left: 2px; 
-    opacity: 0.9;
+    opacity: 1;
     border: 1px solid #ddd; 
   }
   
   .title1image {
     position: relative;
-    background-image: url('/public/airportnight.jpg');
+    background-image: url('/public/airportnight.png');
     margin-left: 5px;
     height: 565px;
     width: 420px;
@@ -78,7 +78,7 @@
   
   .title2image {
     position: relative;
-    background-image: url('/public/earthnight.jpg');
+    background-image: url('/public/earthnight.png');
     margin-left: 5px; 
     height: 565px;
     width: 335px;
@@ -111,7 +111,7 @@
   
   .title3image {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('/public/airplanewindow.png');
     margin-left: 5px; 
     height: 565px;
     width: 250px;
@@ -120,7 +120,7 @@
 
   .title4image {
     position: relative;
-    background-image: url('/public/parisnight.jpg');
+    background-image: url('/public/parisnight.png');
     height: 565px;
     width: 250px;
     margin-right: 5px;
@@ -295,8 +295,8 @@
   .title3image,
   .title4image {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   .title1image h2,
