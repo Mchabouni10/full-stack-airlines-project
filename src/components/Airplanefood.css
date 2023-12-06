@@ -10,10 +10,11 @@
   }
 
   .food-title{
-    font-style: italic;
-    font-family: Arial;
+    /* font-style: italic; */
+    /* font-family: Arial; */
     color: #333;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
   }
 
   .food-list-container ul {

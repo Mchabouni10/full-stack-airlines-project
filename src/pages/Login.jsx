@@ -1,21 +1,15 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
+import { useAuth } from './AuthContext';
 
 const Login = () => {
-  // State to manage form data
+  const { login, redirect } = useAuth();
   const [formData, setFormData] = useState({
     username: '',
     password: '',
   });
 
-  // State to handle log in message 
-  const [loginMessage, setLoginMessage] = useState('');
-
-  // Hook to enable navigation in React Router
-  const navigate = useNavigate();
-
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,14 +22,12 @@ const Login = () => {
       formData.username === storedUserData.username &&
       formData.password === storedUserData.password
     ) {
-      setLoginMessage('You just logged in!');
-      // Redirect to another page after successful login (replace '/dashboard' with your desired path)
-      navigate('/Succlog');
+      login('/Succlog'); // Call the login function from AuthContext
     } else {
-      setLoginMessage('Username or password is wrong.');
+      // Display an error message or handle the case when credentials don't match
+      console.log('Invalid credentials');
     }
 
-    // Additional login logic can be added here
 
     console.log('Login Form Data:', formData);
   };
@@ -47,6 +39,13 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    // Use the redirect path from context to navigate
+    if (redirect) {
+      window.location.href = redirect;
+    }
+  }, [redirect]);
 
   return (
     <div className="login-container">
@@ -79,8 +78,6 @@ const Login = () => {
         {/* Submit button */}
         <button type="submit">Login</button>
       </form>
-      {/* Display login feedback message */}
-      <p>{loginMessage}</p>
       <div>
         <h3>Don't have an account?</h3>
         <p>
@@ -93,5 +90,3 @@ const Login = () => {
 };
 
 export default Login;
-
-

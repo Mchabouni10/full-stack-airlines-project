@@ -35,16 +35,16 @@ const Nav = (props) => {
           />
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <Link to="/airplanes">Airplanes</Link>
+          <Link to="/airplanes">AIRPLANES</Link>
         </li>
         <li>
-          <Link to="/airlines">Airlines</Link>
+          <Link to="/airlines">AIRLINES</Link>
         </li>
         <li>
-          <Link to="/airports">Airports</Link>
+          <Link to="/airports">AIRPORTS</Link>
         </li>
         <li>
           <a href="/login">

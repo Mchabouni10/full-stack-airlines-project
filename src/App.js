@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Route, Routes,Link } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import Nav from "./components/Nav";
 import MainPage from "./pages/MainPage";
 import Airlines from "./pages/Airlines";
@@ -12,6 +13,8 @@ import Airports from "./pages/Airports";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Succlog from "./pages/Succlog";
+import { AuthProvider } from './pages/AuthContext';
+
 
 const App = () => {
   const handleAirlinesSearch = () => {
@@ -23,13 +26,14 @@ const App = () => {
   };
 
   return (
+    <AuthProvider>
     <div>
       <Nav />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route
           path="/airlines"
-          element={<Airlines airlinessearch={handleAirlinesSearch} />} // Correct prop name
+          element={<Airlines airlinessearch={handleAirlinesSearch} />} 
         />
         <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
         <Route
@@ -48,6 +52,7 @@ const App = () => {
       </Routes>
       <Footer />
     </div>
+    </AuthProvider>
   );
 };
 
