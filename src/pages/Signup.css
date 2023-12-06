@@ -14,7 +14,6 @@
 
   .Signup-page label {
     display: block;
-    /* margin-bottom: 8px; */
   }
   .Signup-page input {
     width: 100%;
@@ -28,7 +27,7 @@
   }
 
   .Signup-page button {
-    background-color: #33a1ff;
+    background-color: #333;
     color: #fff;
     padding: 10px;
     border: none;
@@ -54,6 +53,10 @@
       margin-left: 20%;
   }
   
+
+  .Signup-page button {
+    background-color: #33a1ff;
+  }
   
   }
 
@@ -65,7 +68,10 @@
 
   @media screen and (max-width: 501px) {
     .Signup-page{
-      margin-top: 7%;
-      margin-left: 37%;
+      margin-top: 15%;
+      margin-left: 15%;
+  }
+  .Signup-page button {
+    background-color: #333;
   }
   }
