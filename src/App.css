@@ -15,7 +15,7 @@ body{
 
 /*======== Log in inside page ================*/
 .Inside-Login-Page{
-  min-height: 500px;
+  min-height: 450px;
   margin-top: 150px;
   text-align: center;
 }
@@ -28,34 +28,3 @@ body{
 
 
 
-
-
-
-/*========================== CSS FOR THE FOOTER ========================*/
-  .footer1 {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    color: #fff;
-    margin-top: 1%;
-    margin-bottom: 0;
-  }
-  
-  .footer-section {
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-section h3 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-  }
-  .footer-section ul {
-    display: block;
-  }
-  .footer-section ul li:hover {
-    color: #333; 
-    background-color: white;
-    cursor: pointer;
-  }

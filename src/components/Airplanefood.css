@@ -10,8 +10,6 @@
   }
 
   .food-title{
-    /* font-style: italic; */
-    /* font-family: Arial; */
     color: #333;
     font-size: 40px;
     font-weight: bold;
@@ -28,8 +26,22 @@
   .food-list-container img {
     width: 350px; 
     height: 450px; 
-    /* max-width: 100%; */
     border: 1px solid #333; 
     border-radius: 2px;
     
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+
+  }
+
+
+
+
+
+  @media screen and (max-width: 501px) {
+
   }
