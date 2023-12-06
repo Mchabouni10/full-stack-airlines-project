@@ -14,12 +14,12 @@ import Signup from "./pages/Signup";
 import Succlog from "./pages/Succlog";
 
 const App = () => {
-  const handleAirlinesSearch = (searchTerm) => {
+  const handleAirlinesSearch = () => {
     // Handle the navigation to AirlinesDetails with the search term
   };
 
-  const handleAirportSearch = (search) => {
-    // Handle the navigation to AirportsDetails with the search term
+  const handleAirportSearch = () => {
+    // Handle the navigation to AirportsDetails with the search 
   };
 
   return (
