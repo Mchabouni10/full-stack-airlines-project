@@ -211,3 +211,89 @@
     margin-left: 70%;
   }
   
+
+  /* ============================= media query for tablets ====================================================== */
+@media screen and (max-width: 768px) {
+  .MainPage {
+    margin-top: 50px;
+  }
+
+  .nav2 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0.2%;
+  }
+
+  .nav2 h3 {
+    font-size: 18px;
+  }
+
+  .imagesContainer {
+    flex-direction: column;
+  }
+
+  .title1image,
+  .title2image,
+  .title3image,
+  .title4image {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title1image h2,
+  .title2image h2,
+  .title3image h2,
+  .title4image h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .FlyandEntrtainImage {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Add media query for phones */
+@media screen and (max-width: 480px) {
+  .MainPage {
+    margin-top: 40px;
+  }
+
+  .nav2 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 0.2%;
+  }
+
+  .nav2 h3 {
+    font-size: 16px;
+  }
+
+  .imagesContainer {
+    flex-direction: column;
+  }
+
+  .title1image,
+  .title2image,
+  .title3image,
+  .title4image {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title1image h2,
+  .title2image h2,
+  .title3image h2,
+  .title4image h2 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  .FlyandEntrtainImage {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

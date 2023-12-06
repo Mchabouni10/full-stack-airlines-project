@@ -1,5 +1,4 @@
 #nav {
-  /* display: flex; */
   
   background-color: #333;
   border-radius: 1px;
@@ -80,4 +79,38 @@ strong {
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+/*================ Using Media querry for tablet responsivness ====================*/
+@media screen and (max-width: 768px) {
+  ul {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .CompanyLogo {
+    height: 20px;
+  }
+
+  .LoginLogo {
+    height: 30px;
+    width: 30px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+
+/*================ Using Media querry for phone responsivness ====================*/
+@media screen and (max-width: 480px) {
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  a {
+    font-size: 16px;
+  }
 }
