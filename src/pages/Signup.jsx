@@ -19,9 +19,11 @@ const SignUp = () => {
     // struggle with this======================================
     localStorage.setItem("userData", JSON.stringify(formData));
     console.log("Form submitted:", formData);
-    console.log('Form submitted:', formData);
   };
 
+
+
+  //w3 school help how to create a label form 
   return (
     <div className='Signup-page'>
       <h2>Sign Up</h2>
