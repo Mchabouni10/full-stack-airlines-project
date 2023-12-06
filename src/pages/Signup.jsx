@@ -17,6 +17,8 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // struggle with this======================================
+    localStorage.setItem("userData", JSON.stringify(formData));
+    console.log("Form submitted:", formData);
     console.log('Form submitted:', formData);
   };
 

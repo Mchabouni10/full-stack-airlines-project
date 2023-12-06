@@ -1,6 +1,6 @@
 .Signup-page{
-    margin-top: 10%;
-    margin-left: 40%;
+    margin-top: 7%;
+    margin-left: 37%;
 }
 
 
@@ -14,11 +14,11 @@
 
   .Signup-page label {
     display: block;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
   }
   .Signup-page input {
     width: 100%;
-    padding: 8px;
+    padding: 4px;
     margin-bottom: 16px;
     box-sizing: border-box;
   }
