@@ -145,7 +145,7 @@
     font-size: 25px;
     margin-top:1%; 
   }
-  
+
   
 
 
@@ -174,56 +174,80 @@
 
   .title1image {
     position: relative;
-    background-image: url('/public/airportnight.png');
+    background-image: url('/public/airportday.png');
     margin-left: .3%;
-    height: 565px;
-    width: 420px;
+    height: 440px;
+    width: 300px;
   }
   
   .title2image {
     position: relative;
-    background-image: url('/public/earthnight.png');
+    background-image: url('/public/travel1.png');
     margin-left: .3%; 
-    height: 565px;
-    width: 335px;
+    height: 440px;
+    width: 260px;
   }
 
   .title3image {
     position: relative;
-    background-image: url('/public/airplanewindow.png');
+    background-image: url('/public/windowday.png');
     margin-left: .3%; 
-    height: 565px;
-    width: 250px;
+    height: 440px;
+    width: 200px;
   }
 
 
   .title4image {
     position: relative;
-    background-image: url('/public/parisnight.png');
-    height: 565px;
-    width: 240px;
+    background-image: url('/public/travel2.png');
+    height: 440px;
+    width: 180px;
     margin-left: .3%;
     margin-right: .5%;
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .FlyandEntrtainImage {
-    margin-left: 0;
-    margin-top: 20px;
+  .title1image h2,
+  .title2image h2,
+  .title3image h2,
+  .title4image h2 {
+    display: none;
   }
+
+
+
+  .entertainImage {
+    width: 450px; 
+    height: 180px; 
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 10%;
+    border: 1px solid #333; 
+  }
+  .textcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+
+  .nonStop{
+    background-color: #33a1ff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3%;
+    margin-right: 5%;
+    color: white;
+
+  }
+  
+  .fly {
+    text-align: left;
+    font-size: 15px;
+    margin-top:1%; 
+  }
+
 }
 
 /*================ media query for phones ================== */
@@ -239,8 +263,68 @@
     flex-direction: column;
   }
 
-  .FlyandEntrtainImage {
-    margin-left: 0;
-    margin-top: 15px;
+  .title1image {
+    position: relative;
+    background-image: url('/public/airportnight.png');
+    margin-left: .3%;
+    height: 250px;
+    width: 250px;
   }
+  
+  .title2image {
+    position: relative;
+    background-image: url('/public/earthnight.png');
+    margin-left: .3%; 
+    height: 250px;
+    width: 250px;
+  }
+
+  .title3image {
+    position: relative;
+    background-image: url('/public/airplanewindow.png');
+    margin-left: .3%; 
+    height: 250px;
+    width: 250px;
+  }
+
+
+  .title4image {
+    position: relative;
+    background-image: url('/public/parisnight.png');
+    height: 250px;
+    width: 250px;
+    margin-left: .3%;
+    margin-right: .5%;
+  }
+
+
+  .title1image h2 {
+    color: white; 
+    margin-top: 500px; 
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .title2image h2 {
+    color: white; 
+    margin-top: 345px; 
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .title3image h2 {
+    color: white; 
+    margin-top: 500px; 
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .title4image h2 {
+    color: white; 
+    margin-top: 500px; 
+    font-style: italic;
+    font-size: 15px;
+  }
+
+
 }
