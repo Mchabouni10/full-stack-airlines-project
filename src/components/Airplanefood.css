@@ -1,6 +1,6 @@
 .food-list-container {
     overflow-x: auto;
-    background-color: rgb(233, 236, 239);
+    background-color: white;
     list-style: none;
     display: flex;
     overflow: auto;

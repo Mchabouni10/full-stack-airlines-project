@@ -125,6 +125,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
     margin-right: 15%;
+    border: 1px solid #333; 
   }
   .textcontainer{
     display: flex;
