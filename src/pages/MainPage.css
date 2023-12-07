@@ -45,16 +45,15 @@
   .title1image {
     position: relative;
     background-image: url('/public/airportnight.png');
-    margin-left: 5px;
+    margin-left: .3%;
     height: 565px;
     width: 420px;
-    transition: transform 1s ease; 
   }
   
   .title2image {
     position: relative;
     background-image: url('/public/earthnight.png');
-    margin-left: 5px; 
+    margin-left: .3%; 
     height: 565px;
     width: 335px;
   }
@@ -62,7 +61,7 @@
   .title3image {
     position: relative;
     background-image: url('/public/airplanewindow.png');
-    margin-left: 5px; 
+    margin-left: .3%; 
     height: 565px;
     width: 250px;
   }
@@ -72,8 +71,9 @@
     position: relative;
     background-image: url('/public/parisnight.png');
     height: 565px;
-    width: 250px;
-    margin-right: 5px;
+    width: 240px;
+    margin-left: .3%;
+    margin-right: .5%;
   }
 
 

@@ -1,6 +1,5 @@
-
-import React, { useReducer, useEffect } from 'react';
-import './Slideshow.css';
+import React, { useReducer, useEffect } from "react";
+import "./Slideshow.css";
 
 const initialState = {
   currentIndex: 0,
@@ -19,11 +18,11 @@ const initialState = {
 };
 
 const actionTypes = {
-  NEXT: 'NEXT',
-  PREVIOUS: 'PREVIOUS',
+  NEXT: "NEXT",
+  PREVIOUS: "PREVIOUS",
 };
 
-const localStorageKey = 'slideshowState';
+const localStorageKey = "slideshowState";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -33,7 +32,8 @@ const reducer = (state, action) => {
       return { ...state, currentIndex: nextIndex };
 
     case actionTypes.PREVIOUS:
-      const previousIndex = (state.currentIndex - 1 + state.images.length) % state.images.length;
+      const previousIndex =
+        (state.currentIndex - 1 + state.images.length) % state.images.length;
       saveStateToLocalStorage({ ...state, currentIndex: previousIndex });
       return { ...state, currentIndex: previousIndex };
 
@@ -53,20 +53,36 @@ const loadStateFromLocalStorage = () => {
 
 const ImageCarousel = ({ images, currentIndex, nextImage, previousImage }) => {
   return (
-    <div className='SlideShowCSS'>
-      <button className='previousButtonSlideshow' onClick={previousImage} disabled={currentIndex === 0}>
-        Previous
+    <div className="SlideShowCSS">
+      <button
+        className="previousButtonSlideshow"
+        onClick={previousImage}
+        disabled={currentIndex === 0}
+      >
+        {'<'}
       </button>
-      <img className='slidshowimages' src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-      <button className='nextButtonSlideshow' onClick={nextImage} disabled={currentIndex === images.length - 1}>
-        Next
+      <img
+        className="slidshowimages"
+        src={images[currentIndex]}
+        alt={`Image ${currentIndex + 1}`}
+      />
+      <button
+        className="nextButtonSlideshow"
+        onClick={nextImage}
+        disabled={currentIndex === images.length - 1}
+      >
+       {'>'}
       </button>
     </div>
   );
 };
 
 const Slideshow = () => {
-  const [state, dispatch] = useReducer(reducer, initialState, loadStateFromLocalStorage);
+  const [state, dispatch] = useReducer(
+    reducer,
+    initialState,
+    loadStateFromLocalStorage
+  );
 
   useEffect(() => {
     saveStateToLocalStorage(state);
@@ -81,12 +97,15 @@ const Slideshow = () => {
   };
 
   return (
+    <>
+    <h1 className="slideshowtitle">ENJOY THE SLIDE</h1>
     <ImageCarousel
       images={state.images}
       currentIndex={state.currentIndex}
       nextImage={nextImage}
       previousImage={previousImage}
     />
+    </>
   );
 };
 
