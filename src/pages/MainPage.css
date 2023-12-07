@@ -69,7 +69,7 @@
     position: relative;
     background-image: url('/public/parisnight.png');
     height: 565px;
-    width: 240px;
+    width: 245px;
     margin-left: .3%;
     margin-right: .5%;
   }
@@ -144,6 +144,11 @@
     text-align: left;
     font-size: 25px;
     margin-top:1%; 
+    color : black
+  }
+  .LoremP{
+    text-align: left;
+    color: red;
   }
 
   
@@ -260,41 +265,36 @@
   }
 
   .imagesContainer {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .3%;
   }
 
   .title1image {
     position: relative;
     background-image: url('/public/airportnight.png');
-    margin-left: .3%;
-    height: 250px;
-    width: 250px;
+    height: 248px;
+    width: 248px;
   }
   
   .title2image {
     position: relative;
     background-image: url('/public/earthnight.png');
-    margin-left: .3%; 
-    height: 250px;
-    width: 250px;
+    height: 248px;
+    width: 248px;
   }
 
   .title3image {
     position: relative;
-    background-image: url('/public/airplanewindow.png');
-    margin-left: .3%; 
-    height: 250px;
-    width: 250px;
+    background-image: url('/public/airplanewindow.png'); 
+    height: 248px;
+    width: 248px;
   }
-
-
   .title4image {
     position: relative;
     background-image: url('/public/parisnight.png');
-    height: 250px;
-    width: 250px;
-    margin-left: .3%;
-    margin-right: .5%;
+    height: 248px;
+    width: 248px;
   }
 
 

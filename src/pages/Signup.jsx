@@ -16,7 +16,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Save data to localStorage
-    localStorage.setItem('userData', JSON.stringify(formData));
+    localStorage.setItem('userData', JSON.stringify(formData));////////// ===========
     // Call the login function from AuthContext
     login();
   };

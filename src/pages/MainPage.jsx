@@ -41,7 +41,7 @@ const MainPage = () => {
           <div className="textcontainer">
           <h2 className="nonStop">NON-STOP FLIGHTS</h2>
           <h2 className="fly">ENJOY A MOVIE WHILE FLYING</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p className="LoremP">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
