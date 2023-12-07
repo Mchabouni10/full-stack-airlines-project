@@ -7,19 +7,29 @@
     margin-right: .5%;
   }
   
-  .previousButtonSlideshow,
+  .previousButtonSlideshow{
+    background-color: #333;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    cursor: pointer;
+    margin: .5%;
+    width: 30px; 
+
+  }
+
   .nextButtonSlideshow {
     background-color: #333;
     color: #fff;
     font-size: 25px;
-    text-align: center;
     font-weight: bold;
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-left: 1px;
     cursor: pointer;
     margin: .5%;
-    width: 20px; 
+    width: 30px; 
   }
   
   .previousButtonSlideshow:disabled {
@@ -55,7 +65,46 @@
 
   @media screen and (max-width: 768px) {
 
-    
+    .previousButtonSlideshow{
+      background-color: #33a1ff;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      cursor: pointer;
+      margin: .5%;
+      width: 20px; 
+  
+    }
+  
+    .nextButtonSlideshow {
+      background-color: #33a1ff;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      cursor: pointer;
+      margin: .5%;
+      width: 20px; 
+    }
+
+    .slidshowimages {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd; 
+      width: 94%; 
+      max-height: 390px; 
+    }
+  
+    .slideshowtitle{
+      background-color: white;
+      margin: .5%;
+      font-size: 25px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
 
   }
 
@@ -64,5 +113,47 @@
 
 
   @media screen and (max-width: 501px) {
+
+    .previousButtonSlideshow{
+      background-color: #333;
+      color: #fff;
+      font-size: 5px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      cursor: pointer;
+      margin: .5%;
+      width: 10px; 
+  
+    }
+  
+    .nextButtonSlideshow {
+      background-color: #333;
+      color: #fff;
+      font-size: 5px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      cursor: pointer;
+      margin: .5%;
+      width: 10px; 
+    }
+
+    .slidshowimages {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd; 
+      width: 94%; 
+      max-height: 290px; 
+    }
+  
+    .slideshowtitle{
+      background-color: white;
+      margin: .5%;
+      font-size: 15px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+
 
   }

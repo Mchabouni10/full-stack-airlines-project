@@ -12,8 +12,8 @@
   .food-container {
     background-color: white;
     margin: .5%;
-    display: flex; /* Use flex container for better control */
-    align-items: center; /* Align items vertically in the center */
+    display: flex;
+    align-items: center; 
     justify-content: center;
   }
 
