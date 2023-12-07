@@ -9,12 +9,13 @@ const Login = () => {
     username: '',
     password: '',
   });
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Retrieve data from localStorage
-    const storedUserData = JSON.parse(localStorage.getItem('userData'));
+    const storedUserData = JSON.parse(localStorage.getItem('user'));
 
     // Check if entered credentials match stored user data
     if (
@@ -24,10 +25,9 @@ const Login = () => {
     ) {
       login('/Succlog'); // Call the login function from AuthContext
     } else {
-      // Display an error message or handle the case when credentials don't match
-      console.log('Invalid credentials');
+      // Display an error message
+      setErrorMessage('Invalid credentials');
     }
-
 
     console.log('Login Form Data:', formData);
   };
@@ -50,6 +50,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <h2>Login</h2>
+      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       <form onSubmit={handleSubmit}>
         {/* Username input */}
         <label>
@@ -63,6 +64,7 @@ const Login = () => {
           />
         </label>
         <br />
+
         {/* Password input */}
         <label>
           Password:
@@ -75,6 +77,7 @@ const Login = () => {
           />
         </label>
         <br />
+
         {/* Submit button */}
         <button type="submit">Login</button>
       </form>
@@ -90,3 +93,4 @@ const Login = () => {
 };
 
 export default Login;
+

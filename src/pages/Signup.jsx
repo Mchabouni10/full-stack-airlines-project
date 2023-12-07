@@ -15,8 +15,16 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Save data to localStorage
-    localStorage.setItem('userData', JSON.stringify(formData));////////// ===========
+
+    // Retrieve existing user data from localStorage
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+    // Add the new user to the array
+    existingUsers.push(formData);
+
+    // Save the updated array back to localStorage
+    localStorage.setItem('users', JSON.stringify(existingUsers));
+
     // Call the login function from AuthContext
     login();
   };
