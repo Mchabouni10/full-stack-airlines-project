@@ -54,6 +54,10 @@
         padding-bottom: 1px;
       }
 
+      .footer-section ul li{
+        font-size: 16px;
+      }
+
   }
 
 
@@ -63,5 +67,9 @@
   @media screen and (max-width: 501px) {
     .footer1 {
         background-color: #333;
+      }
+
+      .footer-section ul li{
+        font-size: 12px;
       }
   }
