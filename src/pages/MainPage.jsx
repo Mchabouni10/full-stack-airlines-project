@@ -44,13 +44,6 @@ const MainPage = () => {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-
-
-
-
-
-
-
       </div>
       <Airplanefood />
       <Slideshow />

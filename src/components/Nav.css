@@ -82,6 +82,7 @@ strong {
   top: 0;
   width: 100%;
   z-index: 100;
+  margin-bottom: 0;
 }
 
 .sticky + .content {

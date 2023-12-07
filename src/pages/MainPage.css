@@ -11,7 +11,7 @@
     background-color: white;
     border-radius: 1px;
     margin: 0;
-    padding-top: 0.1%;
+    padding-top: 0.2%;
     padding-bottom: 0.1%;
     margin-bottom: 0.5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -20,6 +20,7 @@
   .nav2 h3{
     color: #333;
     font-style: italic;
+    font-size: 20px;
   }
 
   .imagesContainer {
@@ -28,17 +29,14 @@
     margin: 0;
   }
   
-  
-  
+
   .title1image,
   .title2image,
   .title3image,
   .title4image{
     background-size: cover;
     max-width: 100%;
-
     margin-left: 2px; 
-    opacity: 1;
     border: 1px solid #ddd; 
   }
   
@@ -150,42 +148,77 @@
   
   
 
+
+
   /* ============================= media query for tablets ====================================================== */
 @media screen and (max-width: 768px) {
-  .MainPage {
-    margin-top: 50px;
-  }
-
+  
   .nav2 {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    margin-bottom: 0.2%;
+    margin-top: 0;
+    padding-top: .5%;
+    padding-bottom: .5%;
   }
+ 
 
-  .nav2 h3 {
-    font-size: 18px;
+  .nav2 h3{
+    color: #33a1ff;
+    font-size: 16px;
+    font-style: italic;
   }
 
   .imagesContainer {
-    flex-direction: column;
+    display: flex;
+    position: relative;
+    margin: 0;
   }
 
-  .title1image,
-  .title2image,
-  .title3image,
+  .title1image {
+    position: relative;
+    background-image: url('/public/airportnight.png');
+    margin-left: .3%;
+    height: 565px;
+    width: 420px;
+  }
+  
+  .title2image {
+    position: relative;
+    background-image: url('/public/earthnight.png');
+    margin-left: .3%; 
+    height: 565px;
+    width: 335px;
+  }
+
+  .title3image {
+    position: relative;
+    background-image: url('/public/airplanewindow.png');
+    margin-left: .3%; 
+    height: 565px;
+    width: 250px;
+  }
+
+
   .title4image {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    position: relative;
+    background-image: url('/public/parisnight.png');
+    height: 565px;
+    width: 240px;
+    margin-left: .3%;
+    margin-right: .5%;
   }
 
-  .title1image h2,
-  .title2image h2,
-  .title3image h2,
-  .title4image h2 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .FlyandEntrtainImage {
     margin-left: 0;
@@ -194,40 +227,16 @@
 }
 
 /*================ media query for phones ================== */
-@media screen and (max-width: 480px) {
-  .MainPage {
-    margin-top: 40px;
-  }
+@media screen and (max-width: 501px) {
 
-  .nav2 {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 0.2%;
-  }
-
-  .nav2 h3 {
-    font-size: 16px;
+  .nav2 h3{
+    color: #333;
+    font-size: 14px;
+    font-style: italic;
   }
 
   .imagesContainer {
     flex-direction: column;
-  }
-
-  .title1image,
-  .title2image,
-  .title3image,
-  .title4image {
-    width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-
-  .title1image h2,
-  .title2image h2,
-  .title3image h2,
-  .title4image h2 {
-    font-size: 24px;
-    margin-top: 15px;
   }
 
   .FlyandEntrtainImage {
