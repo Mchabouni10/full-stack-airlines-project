@@ -6,7 +6,7 @@
 
 .Signup-page form {
     max-width: 300px;
-    padding: 20px;
+    padding: 2%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -14,12 +14,14 @@
   }
 
   .Signup-page label {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
   .Signup-page input {
     width: 100%;
-    padding: 4px;
-    margin-bottom: 16px;
+    padding: 3%;
+    margin-bottom: 1%;
     box-sizing: border-box;
   }
   .Signup-page p{

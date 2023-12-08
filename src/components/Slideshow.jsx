@@ -17,23 +17,26 @@ const initialState = {
   ],
 };
 
-const actionTypes = {
+
+// DOCUMENTATION FROM JORDAN DOLLAR PIZZA EXEMPLE 
+
+const actionTypes = { // Action needed to move previous or next 
   NEXT: "NEXT",
   PREVIOUS: "PREVIOUS",
 };
 
-const localStorageKey = "slideshowState";
+const localStorageKey = "slideshowState"; // key for storing and retrieving the slideshow state in local storage.
 
 const reducer = (state, action) => {
   switch (action.type) {
     case actionTypes.NEXT:
-      const nextIndex = (state.currentIndex + 1) % state.images.length;
+      const nextIndex = (state.currentIndex + 1) % state.images.length; //handling the logic 'NEXT' action
       saveStateToLocalStorage({ ...state, currentIndex: nextIndex });
       return { ...state, currentIndex: nextIndex };
 
     case actionTypes.PREVIOUS:
       const previousIndex =
-        (state.currentIndex - 1 + state.images.length) % state.images.length;
+        (state.currentIndex - 1 + state.images.length) % state.images.length; //handling the logic 'PREVIOUS' action
       saveStateToLocalStorage({ ...state, currentIndex: previousIndex });
       return { ...state, currentIndex: previousIndex };
 
@@ -43,13 +46,15 @@ const reducer = (state, action) => {
 };
 
 const saveStateToLocalStorage = (state) => {
-  localStorage.setItem(localStorageKey, JSON.stringify(state));
+  localStorage.setItem(localStorageKey, JSON.stringify(state));   //save the current state to local storage.
 };
 
 const loadStateFromLocalStorage = () => {
-  const storedState = localStorage.getItem(localStorageKey);
+  const storedState = localStorage.getItem(localStorageKey); //function to load the state from local storage, initializing it with the initial state if no stored state is found.
   return storedState ? JSON.parse(storedState) : initialState;
 };
+
+//IMAGE CARROSEEL IS RESPONSIBLE OF RENDRING ALL TYPE OF ACTIONS AND THE CLICKS 
 
 const ImageCarousel = ({ images, currentIndex, nextImage, previousImage }) => {
   return (
@@ -88,9 +93,13 @@ const Slideshow = () => {
     saveStateToLocalStorage(state);
   }, [state]);
 
+  //functions dispatch actions to the reducer to handle moving to the next or previous imag
+
   const nextImage = () => {
     dispatch({ type: actionTypes.NEXT });
   };
+
+  //functions dispatch actions to the reducer to handle moving to the next or previous imag
 
   const previousImage = () => {
     dispatch({ type: actionTypes.PREVIOUS });
