@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
 
     // Retrieve data from localStorage
-    const storedUserData = JSON.parse(localStorage.getItem('user'));
+    const storedUserData = JSON.parse(localStorage.getItem('userData'));
 
     // Check if entered credentials match stored user data
     if (

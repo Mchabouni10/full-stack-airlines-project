@@ -5,6 +5,8 @@ import './Signup.css';
 
 const SignUp = () => {
   const { login } = useAuth();
+  const { redirect, login: loginFunction } = useAuth(); // Destructure login function and redirect from useAuth
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -16,17 +18,12 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Retrieve existing user data from localStorage
-    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    // Save data to localStorage
+    localStorage.setItem('userData', JSON.stringify(formData));
+    alert('you sign succefully')
 
-    // Add the new user to the array
-    existingUsers.push(formData);
-
-    // Save the updated array back to localStorage
-    localStorage.setItem('users', JSON.stringify(existingUsers));
-
-    // Call the login function from AuthContext
-    login();
+    // Call the login function from AuthContext with the redirect path
+    loginFunction('/login'); // Specify the path you want to redirect to after signing up
   };
 
   const handleChange = (e) => {
@@ -36,69 +33,70 @@ const SignUp = () => {
   //w3 school help how to create a label form 
   return (
     <div className='Signup-page'>
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Re-enter Password:
-          <input
-            type="password"
-            name="reEnterPassword"
-            value={formData.reEnterPassword}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Date of Birth:
-          <input
-            type="date"
-            name="dateOfBirth"
-            value={formData.dateOfBirth}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit">Sign Up</button>
-        <div>
-          <h2>Already have an account? <Link to="/login">Login</Link></h2>
-        </div>
-      </form>
+  <h2>Sign Up</h2>
+  <form onSubmit={handleSubmit}>
+    <label>
+      Username:
+      <input
+        type="text"
+        name="username"
+        value={formData.username}
+        onChange={handleChange}
+        placeholder="Enter your username"
+      />
+    </label>
+    <br />
+    <label>
+      Email:
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Enter your email"
+      />
+    </label>
+    <br />
+    <label>
+      Password:
+      <input
+        type="password"
+        name="password"
+        value={formData.password}
+        onChange={handleChange}
+        placeholder="Enter your password"
+      />
+    </label>
+    <br />
+    <label>
+      Re-enter Password:
+      <input
+        type="password"
+        name="reEnterPassword"
+        value={formData.reEnterPassword}
+        onChange={handleChange}
+        placeholder="Re-enter your password"
+      />
+    </label>
+    <br />
+    <label>
+      Date of Birth:
+      <input
+        type="date"
+        name="dateOfBirth"
+        value={formData.dateOfBirth}
+        onChange={handleChange}
+        placeholder="Select your date of birth"
+      />
+    </label>
+    <br />
+    <button type="submit">Sign Up</button>
+    <div>
+      <h2>Already have an account? <Link to="/login">Login</Link></h2>
     </div>
+  </form>
+</div>
+
   );
 };
 
