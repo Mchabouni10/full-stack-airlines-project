@@ -7,29 +7,32 @@ function EmployeePage() {
 
   return (
     <div className="EmployeePage">
-      <Header txt={"Employee Info"} />
+      <Header className="headerTitle" txt={"aviation Info"} />
       <h2 className="PageName">{worker.name}</h2>
       <img className="ProfileImageRight" src={worker.image} alt={worker.name} />
-      <p>
+      <h3 className = "text-my-h3">
         Position: <strong>{worker.position}</strong>
-      </p>
-      <p>
+      </h3>
+      <h3 className = "text-my-h3">
         Duty: <strong>{worker.duty}</strong>
-      </p>
-      <p>
+      </h3>
+      <h3 className = "text-my-h3">
         Field: <strong>{worker.field}</strong>
-      </p>
-      <p>
+      </h3>
+      <h3 className = "text-my-h3">
         Average Salary: <strong>{worker.averageSalary}</strong>
-      </p>
-      <p>
+      </h3>
+      <h3 className = "text-my-h3">
         Duty Details: <strong>{worker.dutyDetails}</strong>
-      </p>
-      <p>
+      </h3>
+      <h3 className = "text-my-h3">
         Email: <strong>{worker.email}</strong>
-      </p>
+      </h3>
     </div>
   );
 }
 
 export default EmployeePage;
+
+
+
