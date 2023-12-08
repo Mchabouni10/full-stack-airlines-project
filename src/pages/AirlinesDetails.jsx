@@ -4,9 +4,9 @@ import './Airlines.css';
 
 const AirlinesDetails = () => {
   const apiKey = "lulGyHOBLEnPvGZ0W2NWZhJWbsiX2RTbYMHhwMZA";
-  const { searchterm } = useParams();
+  const { searchterm } = useParams(); // useParams used to access parameters from the URL
   const [airlineDetail, setAirlineDetail] = useState([]);
-  const [airlineLoaded, setAirlineLoaded] = useState(false);
+  const [airlineLoaded, setAirlineLoaded] = useState(false); // State to store the details of the airline and track if data is loaded
 
   const apiUrl = `https://api.api-ninjas.com/v1/airlines?name=${searchterm}`;
 

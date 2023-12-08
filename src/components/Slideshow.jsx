@@ -86,7 +86,7 @@ const Slideshow = () => {
   const [state, dispatch] = useReducer(
     reducer,
     initialState,
-    loadStateFromLocalStorage
+    loadStateFromLocalStorage   
   );
 
   useEffect(() => {
