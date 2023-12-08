@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,7 +15,9 @@ function Footer() {
         <li>Sustainability</li>
         <li>Enjoy Flying</li>
         <li>Airport Choice</li>
-        <li>Airplane Favorite</li>
+        <li>
+          <Link to="/stuff">Stuff</Link>
+        </li>
         <li>Company Choice</li>
       </ul>
     </div>

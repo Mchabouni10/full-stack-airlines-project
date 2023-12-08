@@ -3,7 +3,6 @@
     margin-left: 40%;
 }
 
-
 .login-container form {
     max-width: 300px;
     padding: 20px;
@@ -30,7 +29,7 @@
   }
 
   .login-container button {
-    background-color: #33a1ff;
+    background-color: #333;
     color: #fff;
     padding: 10px;
     border: none;
@@ -39,9 +38,9 @@
     width: 100%;
   }
 
-  .login-container button :hover {
-    background-color: #fff;
-    color: #33a1ff;
+  .login-container button:hover {
+    background-color: #33a1ff;
+    color: #333;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -49,6 +48,15 @@
     width: 100%;
   }
 
+  .singuploginpage{
+    color: #333;
+    font-size: 33px;
+  }
+
+  .singuploginpage:hover{
+    color: #33a1ff;
+    font-size: 33px;
+  }
 
 
 
@@ -64,6 +72,26 @@
       margin-top: 15%;
       margin-left: 25%;
   }
+
+
+
+  .login-container button {
+    background-color: #33a1ff;
+    color: #333;
+  }
+
+  .login-container button:hover {
+    background-color: #333;
+    color: white;
+  }
+  .singuploginpage{
+    color: #33a1ff;
+    font-size: 22px;
+  }
+  .singuploginpage:hover{
+    color: #333;
+    font-size: 22px;
+  }
   
   
   }
@@ -78,6 +106,26 @@
     .login-container{
       margin-top: 15%;
       margin-left: 10%;
+  }
+
+  .login-container button {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .login-container button:hover {
+    background-color: #33a1ff;
+    color: #333;
+  }
+
+  .singuploginpage{
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .singuploginpage:hover{
+    color: #33a1ff;
+    font-size: 18px;
   }
  
   

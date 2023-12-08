@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Nav from "./components/Nav";
 import MainPage from "./pages/MainPage";
 import Airlines from "./pages/Airlines";
@@ -14,6 +14,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Succlog from "./pages/Succlog";
 import { AuthProvider } from './pages/AuthContext';
+import { EmployeeProvider } from './pages/employes/EmployeeContext'; 
+import EmpApp from "./pages/employes/EmpApp";
 
 
 const App = () => {
@@ -27,31 +29,34 @@ const App = () => {
 
   return (
     <AuthProvider>
-    <div>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route
-          path="/airlines"
-          element={<Airlines airlinessearch={handleAirlinesSearch} />} 
-        />
-        <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
-        <Route
-          path="/airports"
-          element={<Airports airportsearch={handleAirportSearch} />}
-        />
-        <Route path="/airports/:search" element={<AirportsDetails />} />
-        <Route path="/airplanes" element={<Airplanes />} />
-        <Route
-          path="/airplanes-details/:manufacturer/:model"
-          element={<AirplanesDetails />}
-        />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/Succlog" element={<Succlog />} />
-      </Routes>
-      <Footer />
-    </div>
+      <EmployeeProvider>  {/* Add the EmployeeProvider around the Route for /Stuff */}
+        <div>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route
+              path="/airlines"
+              element={<Airlines airlinessearch={handleAirlinesSearch} />} 
+            />
+            <Route path="/airlines/:searchterm" element={<AirlinesDetails />} />
+            <Route
+              path="/airports"
+              element={<Airports airportsearch={handleAirportSearch} />}
+            />
+            <Route path="/airports/:search" element={<AirportsDetails />} />
+            <Route path="/airplanes" element={<Airplanes />} />
+            <Route
+              path="/airplanes-details/:manufacturer/:model"
+              element={<AirplanesDetails />}
+            />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/Succlog" element={<Succlog />} />
+            <Route path="/Stuff" element={<EmpApp />} />
+          </Routes>
+          <Footer />
+        </div>
+      </EmployeeProvider>
     </AuthProvider>
   );
 };
