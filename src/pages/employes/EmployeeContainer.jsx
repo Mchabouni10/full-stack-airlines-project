@@ -14,8 +14,8 @@ function EmployeeContainer() {
 
   return (
     <div>
-      <SearchBar setSearchQuery={setSearchQuery} />
-      <EmployeePage filteredEmployees={filteredEmployees} />
+      {/* <SearchBar setSearchQuery={setSearchQuery} />
+      <EmployeePage filteredEmployees={filteredEmployees} /> */}
     </div>
   );
 }
