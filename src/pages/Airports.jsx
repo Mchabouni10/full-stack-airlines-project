@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Airports.css';
 
+
+//FOLLOWED THE SAME WAY I DID WITH AIRLINES API
+
 function Airports(props) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ search: "" });
