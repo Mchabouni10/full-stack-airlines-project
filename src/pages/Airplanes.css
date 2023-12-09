@@ -31,7 +31,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.airplanesSelect input[type="submit"]:hover {
   background-color: #33a1ff;
   color: #333;
 }
@@ -72,7 +72,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-h1 {
+.aircraft-container h1 {
   text-align: center;
   font-size: 29px;
   margin: 10px 0;
@@ -83,6 +83,11 @@ h1 {
 span {
   font-weight: bold;
   color: #3498db;
+}
+
+.no-results{
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 

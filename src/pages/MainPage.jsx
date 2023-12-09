@@ -3,6 +3,7 @@ import Slideshow from "../components/Slideshow";
 import Airplanefood from "../components/Airplanefood";
 import "./MainPage.css";
 
+
 const MainPage = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const MainPage = () => {
         <div className="nav2">
           <h3>Manage Airlines | Visit Aiports | Know Airlplanes</h3>
         </div>
-
+        
         {/* the container for my images*/}
         <div className="imagesContainer">
           <div className="title1image">

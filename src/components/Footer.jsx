@@ -16,7 +16,7 @@ function Footer() {
         <li>Enjoy Flying</li>
         <li>Airport Choice</li>
         <li>
-          <Link to="/stuff">Stuff</Link>
+          <Link to="/stuff">Staff</Link>
         </li>
         <li>Company Choice</li>
       </ul>

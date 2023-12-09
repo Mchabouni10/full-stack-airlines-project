@@ -40,6 +40,9 @@ const AirlinesDetails = () => {
   }, []);
 
   const loaded = () => {
+    if (airlineDetail.length === 0) {
+      return <div className="no-results"><h1>SORRY NO AIRLINE COMPANY EXIST UNDER THIS NAME : {searchterm}</h1></div>;
+    }
     return (
       <div className="displayAirlinesDEtailes">
         <h1>Airlines Info</h1>

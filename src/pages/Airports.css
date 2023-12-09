@@ -85,7 +85,75 @@
 
 
 
+
+  .displayAirportsDetails {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
   
+  .selected-airport-details {
+    margin-top: 1%;
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-image: url('https://images.unsplash.com/photo-1561131668-f63504fc549d?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selected-airport-details h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  .selected-airport-details p {
+    margin: 8px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  select {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .selected-airport-details h1 {
+    color: #333;
+  }
+  
+  select option {
+    color: #333;
+  }
+  
+  select option:hover {
+    background-color: #33a1ff;
+  }
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

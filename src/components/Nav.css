@@ -51,14 +51,14 @@ ul li a:hover {
 }
 
 .CompanyLogo {
-  height: 40px; 
+  height: 30px; 
   width: auto; 
   border-radius: 20px;
 }
 
 .LoginLogo {
-  height: 40px; 
-  width: 40px; 
+  height: 30px; 
+  width: 30px; 
   border-radius: 50%;
 }
 

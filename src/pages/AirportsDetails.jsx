@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Airports.css";
 
-// DOCUMENTATION FROM MOVIE API WE DID IN CLASS
-// FOLLOW THE SAME WAY I DID WITH AIRLINES API
-
 function AirportsDetails() {
   const apiKey = "lulGyHOBLEnPvGZ0W2NWZhJWbsiX2RTbYMHhwMZA";
   const { search } = useParams();
   const [airportsDetails, setAirportsDetails] = useState([]);
+  const [selectedAirport, setSelectedAirport] = useState(null);
   const [airportsLoaded, setAirportsLoaded] = useState(false);
 
   const apiUrl = `https://api.api-ninjas.com/v1/airports?name=${search}`;
@@ -25,7 +23,6 @@ function AirportsDetails() {
       const data = await response.json();
       setAirportsDetails(data);
       setAirportsLoaded(true);
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -35,56 +32,40 @@ function AirportsDetails() {
     fetchAirportsData();
   }, []);
 
+  const handleSelectChange = (e) => {
+    const selectedIcao = e.target.value;
+    const selectedAirport = airportsDetails.find(
+      (airport) => airport.icao === selectedIcao
+    );
+    setSelectedAirport(selectedAirport);
+  };
+
   const loaded = () => {
     return (
       <div className="displayAirportsDetails">
         <h1>Airport Details</h1>
-        {airportsDetails.map((airport, index) => (
-          <div key={index} className="airport-container">
-            <h2 className="airport-name">{airport.name}</h2>
-            <p className="airport-code">
-              <span>IATA:</span>
-              <a
-                href="https://www.iata.org/"
-                target="_blank"
-              >
-                {airport.iata}
-              </a>
-            </p>
-            <p className="airport-code">
-              <span>ICAO:</span>
-              {airport.icao}
-            </p>
-            <p className="airport-location">
-              <span>City:</span>
-              {airport.city}
-            </p>
-            <p className="airport-location">
-              <span>Region:</span>
-              {airport.region}
-            </p>
-            <p className="airport-location">
-              <span>Country:</span>
-              {airport.country}
-            </p>
-            <p className="airport-location">
-              <span>Elevation:</span>
-              {airport.elevation_ft}
-            </p>
-            <p className="airport-location">
-              <span>Latitude:</span>
-              {airport.latitude}
-            </p>
-            <p className="airport-location">
-              <span>Longitude:</span>
-              {airport.longitude}
-            </p>
-            <p className="airport-timezone">
-              <span>Timezone:</span>
-              {airport.timezone}
-            </p>
+        <select onChange={handleSelectChange}>
+          <option value="">Select an airport</option>
+          {airportsDetails.map((airport, index) => (
+            <option key={index} value={airport.icao}>
+              {airport.name}
+            </option>
+          ))}
+        </select>
+        {selectedAirport && (
+          <div className="selected-airport-details">
+            <h2>Selected Airport Details</h2>
+            <p>ICAO: {selectedAirport.icao}</p>
+            <p>IATA: {selectedAirport.iata}</p>
+            <p>City: {selectedAirport.city}</p>
+            <p>Region: {selectedAirport.region}</p>
+            <p>Country: {selectedAirport.country}</p>
+            <p>Elevation: {selectedAirport.elevation_ft}</p>
+            <p>Latitude: {selectedAirport.latitude}</p>
+            <p>Longitude: {selectedAirport.longitude}</p>
+            <p>Timezone: {selectedAirport.timezone}</p>
           </div>
-        ))}
+        )}
       </div>
     );
   };
@@ -97,3 +78,4 @@ function AirportsDetails() {
 }
 
 export default AirportsDetails;
+
