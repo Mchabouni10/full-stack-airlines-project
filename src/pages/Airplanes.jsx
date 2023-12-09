@@ -116,7 +116,7 @@ function Airplanes() {
           </label>
         )}
 
-        <input type="submit" value="Submit" />
+        <input className= 'SubmitButtonAirplanePage' type="submit" value="Submit" />
       </form>
     </div>
   );

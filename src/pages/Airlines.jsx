@@ -30,7 +30,7 @@ function Airlines(props) {
           value={formData.searchterm}
           placeholder="Search for an Airlines Company"
         />
-        <input type="submit" value="submit" />
+        <input className="SubmitButtonAirlines" type="submit" value="submit" />
       </form>
     </div>
   );
