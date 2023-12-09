@@ -49,8 +49,9 @@
     max-height: 490px; 
   }
 
-  .slideshowtitle{
+  .slideshowtitle {
     background-color: white;
+    text-align: center;
     margin: .5%;
     font-size: 40px;
     padding-top: 1%;

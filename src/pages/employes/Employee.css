@@ -3,35 +3,82 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: .5%;
+  margin-right: .5%;
   margin-top: 7%;
   margin-bottom: .5%;
 }
 
 
 
-/* Centered Text Styles */
-.text-center {
-  text-align: center;
+.EmployeeList {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
-/* Homepage Styles */
-.Homepage {
-  min-width: 50%;
-  margin: 2px;
-  text-align: center;
+.PositionChecklist {
+  margin-bottom: 20px;
 }
 
-/* EmployeeListItem Styles */
+.PositionChecklist h3 {
+  margin-bottom: 10px;
+}
+
+.PositionChecklist label {
+  display: block;
+  margin-bottom: 3%;
+}
+
+.EmployeeItems {
+  overflow-y: auto;
+  width: 400px;
+  max-height: 450px; /* Adjust the max-height as needed */
+}
+
 .EmployeeListItem {
   display: flex;
   align-items: center;
-  margin: 2%;
+  margin: 10px;
   background-color: white;
-  border: 1px solid #333;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.EmployeeListItem:hover {
+  background-color: #33a1ff;
+}
+
+.ProfileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 4%;
+}
+
+.EmployeeDetails {
+  flex-grow: 1;
+}
+
+/* Style the checkbox */
+.PositionChecklist input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style the scrollbar (customize as needed) */
+.EmployeeItems::-webkit-scrollbar {
+  width: 8px;
+}
+
+.EmployeeItems::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.EmployeeItems::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 .ProfileImage {
   width: 90px;
   height: 90px;
