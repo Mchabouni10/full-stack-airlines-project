@@ -66,7 +66,7 @@
   margin-right: 5px;
 }
 
-/* Style the scrollbar (customize as needed) */
+/* Style the scrollbar */
 .EmployeeItems::-webkit-scrollbar {
   width: 8px;
 }
@@ -96,28 +96,37 @@
 
 /* EmployeePage Styles */
 .EmployeePage {
-  display: flex;
+  display: block;
   flex-direction: column;
+  background-color: white;
   align-items: center;
-  margin: 2px;
+  margin-left: 2%;
   align-items: center;
   min-width: 50%;
+  border-radius: 5px;
 }
 
 .ProfileImageRight {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 220px;
+ margin-left: 30%;
   border-radius: 5px;
   border: 1px solid #333;
 }
 
 .text-my-h3 {
-  text-align: center;
-  background-color: white;
+  text-align: left;
+  color: #33a1ff;
+  margin: 1%;
+}
+
+.text-my-h3-span{
+  color: black;
 }
 
 .PageName {
-  color: #333;
+  color: #33a1ff;
+  font-size: 15px;
   text-align: center;
 }
 
