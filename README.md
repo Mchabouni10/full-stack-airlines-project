@@ -54,17 +54,17 @@ The project is structured into distinct sections, making it easy to navigate and
 - [Official React Documentation](https://reactjs.org/docs/getting-started.html)
 - [React Router Documentation](https://reactrouter.com/web/guides/quick-start)
 
-# YouTube Videos
+### YouTube Videos
 - [React Router Tutorial](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
 - [React Hooks Tutorial](https://www.youtube.com/watch?v=LlvBzyy-558)
 
-# W3Schools Courses
+### W3Schools Courses
 - [W3Schools React Tutorial](https://www.w3schools.com/)
 - [W3Schools React Router Tutorial](https://www.w3schools.com/react/default.asp)
 
-# Jordan Class Exemple
+### Jordan Class Exemple
 
-# Homework
+### Homework
 - Complete the Homework Assignment.
 
 ## Installation
