@@ -9,8 +9,6 @@
   margin-bottom: .5%;
 }
 
-
-
 .EmployeeList {
   display: flex;
   flex-direction: row;
@@ -27,7 +25,7 @@
 
 .PositionChecklist label {
   display: block;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .EmployeeItems {
@@ -102,6 +100,7 @@
   align-items: center;
   margin-left: 2%;
   align-items: center;
+  max-height: fit-content;
   min-width: 50%;
   border-radius: 5px;
 }
@@ -115,12 +114,14 @@
 }
 
 .text-my-h3 {
+  
   text-align: left;
   color: #33a1ff;
   margin: 1%;
 }
 
 .text-my-h3-span{
+  margin-left: 3%;
   color: black;
 }
 

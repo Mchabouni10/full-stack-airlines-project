@@ -4,6 +4,8 @@ Welcome to the Aviation Info project! This comprehensive platform offers extensi
 
 ## Table of Contents
 
+
+- [Note](#Note)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -11,6 +13,11 @@ Welcome to the Aviation Info project! This comprehensive platform offers extensi
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Documentation](#documentation)
+
+
+## Note
+Note: This project is part of a comprehensive training cohort website. All images and concepts utilized are unrelated to any specific organization or advertising service. The selection of images was driven by the sole purpose of enhancing the user interface (UI) of the project, with no intention of promoting or endorsing any particular company or commercial entity.
+
 
 
 ## Introduction

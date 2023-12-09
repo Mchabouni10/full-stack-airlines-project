@@ -1,6 +1,6 @@
 const Infolist = [
     {
-        image: "https://c8.alamy.com/comp/T3TG8J/portrait-of-a-young-airline-pilot-wearing-a-captains-uniform-T3TG8J.jpg",
+        image: "https://content.presspage.com/uploads/2278/1920_marcuswalton.jpg?10000",
         name: "Captain A Davis",
         position: "Pilot",
         duty: "Commercial flights, Boeing 747",
@@ -10,7 +10,7 @@ const Infolist = [
         email: "a.davis@example.com",
       },
       {
-        image: "https://c8.alamy.com/comp/2H9G8XY/professional-co-pilot-giving-a-look-into-camera-from-cockpit-2H9G8XY.jpg",
+        image: "https://image1.masterfile.com/getImage/NjkzLTA2MDE3MDAxZW4uMDAwMDAwMDA=AMbF3B/693-06017001en_Masterfile.jpg",
         name: "First Officer D Parker",
         position: "Co-Pilot",
         duty: "Assisting Captain Davis, Airbus A320",
@@ -30,7 +30,7 @@ const Infolist = [
         email: "max.johnson@example.com",
       },
       {
-        image: "https://egnatia-aviation.aero/wp-content/uploads/2023/05/Featured_Strong-Pilot-Demand-Inside-the-Black-Box-of-Pilot-Shortage-Globally-1.jpg",
+        image: "https://www.canberratimes.com.au/images/transform/v1/crop/frm/190143465/c45621ac-ed6b-42c1-9b19-7adcf9b2015b.jpg/r0_0_6720_4480_w1200_h678_fmax.jpg",
         name: "Captain RJ Smith",
         position: "Pilot",
         duty: "International flights, Boeing 777",
@@ -50,7 +50,7 @@ const Infolist = [
         email: "t.adams@example.com",
       },
       {
-        image: "https://www.aviationtoday.com/wp-content/uploads/2017/06/digital_copilot_2016-07-26_d8h04612-copy.jpg",
+        image: "https://assets-jb.fmg-services.co.uk/AJS/uploads/hub/advices/vHXqbJ4qWR8ymtVOJQ5YHkHCIinB2eAlFSlGBIiN.jpeg",
         name: "First Officer J Turner",
         position: "Co-Pilot",
         duty: "Domestic flights, Boeing 737",
