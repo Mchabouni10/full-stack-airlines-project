@@ -10,7 +10,6 @@ Welcome to the Aviation Info project! This comprehensive platform offers extensi
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Documentation](#documentation)
 

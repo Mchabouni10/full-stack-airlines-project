@@ -44,67 +44,213 @@
     position: relative;
     background-image: url('/public/airportnight.png');
     margin-left: .3%;
-    height: 565px;
+    height: 500px;
     width: 420px;
+    transition: transform 0.7s;
   }
   
+  .title1image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: 0.5s; 
+}
+
+.title1image:hover::before {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.title1image h2 {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute; 
+    top: 80%; 
+    left: 20%; 
+    opacity: 0; 
+    transition: 0.5s; 
+}
+
+.title1image:hover h2 {
+    opacity: 1; 
+}
+
+.title1image:hover {
+  transform: scaleX(1.3); 
+  transform-origin: left;
+  z-index: 10;
+}
+
+.title1image:hover::before {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+
+
+
   .title2image {
     position: relative;
     background-image: url('/public/earthnight.png');
     margin-left: .3%; 
-    height: 565px;
+    height: 500px;
     width: 335px;
+    transition: transform 0.7s;
   }
+
+  .title2image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: 0.5s; 
+}
+
+
+  .title2image h2 {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute; 
+    top: 80%; 
+    left: 10%; 
+    opacity: 0; 
+    transition: 0.5s; 
+  }
+
+
+  .title2image:hover h2 {
+    opacity: 1; 
+}
+
+.title2image:hover {
+  transform: scaleX(1.3); 
+  transform-origin: left;
+  z-index: 10;
+}
+
+.title2image:hover::before {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+
+
+
+
 
   .title3image {
     position: relative;
     background-image: url('/public/airplanewindow.png');
     margin-left: .3%; 
-    height: 565px;
+    height: 500px;
     width: 250px;
+    transition: transform 0.7s;
   }
+
+  .title3image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: 0.5s; 
+}
+
+.title3image:hover::before {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.title3image h2 {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute; 
+    top: 80%; 
+    left: 10%; 
+    opacity: 0; 
+    transition: 0.5s; 
+}
+
+.title3image:hover h2 {
+    opacity: 1; 
+}
+
+.title3image:hover {
+  transform: scaleX(1.3); 
+  transform-origin: left;
+  z-index: 10;
+}
+
+.title3image:hover::before {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+
 
 
   .title4image {
     position: relative;
     background-image: url('/public/parisnight.png');
-    height: 565px;
+    height: 500px;
     width: 245px;
     margin-left: .3%;
     margin-right: .5%;
+    transition: transform 0.7s;
   }
+  
+  .title4image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: 0.5s; 
+}
+
+.title4image:hover::before {
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.title4image h2 {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute; 
+    top: 70%; 
+    left: 10%; 
+    opacity: 0; 
+    transition: 0.5s; 
+}
+
+.title4image:hover h2 {
+    opacity: 1; 
+}
+
+.title4image:hover {
+  transform: scaleX(1.3); 
+  transform-origin: right;
+  z-index: 10;
+}
+
+.title4image:hover::before {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+ 
+  
 
 
-  .title1image h2 {
-    color: white; 
-    margin-top: 500px; 
-    font-style: italic;
-    font-size: 40px;
-  }
-  
-  
-  
-  .title2image h2 {
-    color: white; 
-    margin-top: 345px; 
-    font-style: italic;
-    font-size: 40px;
-  }
-  
-  .title3image h2 {
-    color: white; 
-    margin-top: 500px; 
-    font-style: italic;
-    font-size: 40px;
-  }
-  
-  .title4image h2 {
-    color: white; 
-    margin-top: 500px; 
-    font-style: italic;
-    font-size: 40px;
-  }
-  
+
 
 .Second-part-homepage{
  background-color: white;
@@ -282,6 +428,11 @@
     background-image: url('/public/earthnight.png');
     height: 248px;
     width: 248px;
+  }
+  .title2image:hover {
+    transform: scaleX(1.3); 
+    transform-origin: right;
+    z-index: 10;
   }
 
   .title3image {
