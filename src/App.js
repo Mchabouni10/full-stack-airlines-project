@@ -2,18 +2,18 @@
 import React from "react";
 import { Route, Routes} from "react-router-dom";
 import Nav from "./components/Nav";
-import MainPage from "./pages/MainPage";
-import Airlines from "./pages/Airlines";
-import AirlinesDetails from "./pages/AirlinesDetails";
-import Airplanes from "./pages/Airplanes";
-import AirplanesDetails from "./pages/AirplanesDetailes";
+import MainPage from "./HomePage/MainPage";
+import Airlines from "./pages/Airlines/Airlines";
+import AirlinesDetails from "./pages/Airlines/AirlinesDetails";
+import Airplanes from "./pages/Aircrafts/Airplanes";
+import AirplanesDetails from "./pages/Aircrafts/AirplanesDetailes";
 import Footer from "./components/Footer";
-import AirportsDetails from "./pages/AirportsDetails";
-import Airports from "./pages/Airports";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Succlog from "./pages/Succlog";
-import { AuthProvider } from './pages/AuthContext';
+import AirportsDetails from "./pages/Airports/AirportsDetails";
+import Airports from "./pages/Airports/Airports";
+import Login from "./pages/LoginAuth/Login";
+import Signup from "./pages/LoginAuth/Signup";
+import Succlog from "./pages/LoginAuth/Succlog";
+import { AuthProvider } from './pages/LoginAuth/AuthContext';
 import { EmployeeProvider } from './pages/employes/EmployeeContext'; 
 import EmpApp from "./pages/employes/EmpApp";
 
@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <AuthProvider>
-      <EmployeeProvider>  {/* Add the EmployeeProvider around the Route for /Stuff */}
+      <EmployeeProvider>  {/* Add the EmployeeProvider around the Route for /Staff */}
         <div>
           <Nav />
           <Routes>

@@ -1,5 +1,5 @@
 
-.App {
+.Emplyee-Page-UnderStaff{
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -92,7 +92,7 @@
   justify-content: center;
 }
 
-/* EmployeePage Styles */
+/* =============== EmployeePage Styles ======================= */
 .EmployeePage {
   display: block;
   flex-direction: column;
@@ -135,46 +135,33 @@
 
 
   @media screen and (max-width: 768px){
-    
-    
-.App {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
-  margin-bottom: .5%;
-}
-    
-    .EmployeeListItem {
-      background-color: #33a1ff;
-    }
 
-    .ProfileImage {
-      width: 50px; 
-      height: 50px;
-    }
 
-    .App h2{
-      text-align: center;
+    .EmployeePage {
+     margin-top: 4%;
+     width: 90%;
+     height: 90%;
+    }
+    
+    
+    .EmployeeList {
+      margin: 2%;
+      flex-direction: column;
     }
   
-    .HeaderP{
-      display: flex;
-      font-weight: bold;
-      text-align: center;
-      justify-content: center;
-      font-size: 30px;
+    .EmployeeItems {
+      width: 100%;
     }
-
-    .ProfileImageRight{
-      width: 200px;
-      height: 200px;
+  
+    .ProfileImage {
+      width: 70px;
+      height: 70px;
     }
-
-    .text-my-h3{
-      background-color: #33a1ff;
+  
+    .ProfileImageRight {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
     }
 
   }
@@ -183,16 +170,7 @@
 
   @media screen and (max-width: 505px){
     
-    
-    .App {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      margin-left: 2%;
-      margin-right: 2%;
-      margin-top: 12%;
-      margin-bottom: .5%;
-    }
+
         
         .EmployeeListItem {
           background-color: white;

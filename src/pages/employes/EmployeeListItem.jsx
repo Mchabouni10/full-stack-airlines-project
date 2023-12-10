@@ -4,11 +4,19 @@ import "./Employee.css";
 import Infolist from "./Infolist";
 
 function EmployeeList() {
+
+  // Destructuring the setWork function from the EmployeeContext
   const { setWork } = useContext(EmployeeContext);
+
+  // State to keep track of the selected position for filtering
   const [selectedPosition, setSelectedPosition] = useState("");
 
+
+// Event handler for checkbox changes
   const handleCheckboxChange = (e) => {
-    setSelectedPosition(e.target.checked ? e.target.value : "");
+
+    // Update the selectedPosition based on checkbox status
+    setSelectedPosition(e.target.checked ? e.target.value : "");  //is a conditional (ternary) expression, and it's used to update the state variable selectedPosition
   };
 
   return (

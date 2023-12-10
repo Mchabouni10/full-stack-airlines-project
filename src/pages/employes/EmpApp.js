@@ -7,7 +7,7 @@ import EmployeePage from './EmployeePage';
 function EmpApp() {
 //   const [] = useState(Infolist)
   return (
-    <div className="App">
+    <div className="Emplyee-Page-UnderStaff">
      <Homepage />
      <EmployeePage />
     </div>
