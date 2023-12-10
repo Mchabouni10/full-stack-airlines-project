@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Login.css'
 
 export default function Succlog() {
   const logout = () => {
@@ -15,7 +16,7 @@ export default function Succlog() {
   return (
     <div className='Inside-Login-Page'>
       <h1>Inside the log in page</h1>
-      <p>Welcome {localStorage.getItem('name')}</p>
+      <p>Wlecome{localStorage.getItem('username')}</p>
       {/* Use the onClick handler to trigger the Link navigation */}
       <Link to="/">
         <button className="logoutsucc" onClick={logout}>LogOut</button>

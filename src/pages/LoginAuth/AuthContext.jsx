@@ -1,13 +1,20 @@
 import React, { createContext, useContext, useState } from 'react';
-const AuthContext = createContext();
-// Create a new context named AuthContext.
+import { useNavigate } from 'react-router-dom';
 
-export const AuthProvider = ({ children }) => {
+const AuthContext = createContext();
+
+
+
+export const AuthProvider = ({ children}) => {
   // Define a component named AuthProvider, which will serve as the provider for the AuthContext.
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   // Initialize a state variable isAuthenticated with a default value of false, indicating the user is not authenticated.
   const [redirect, setRedirect] = useState(null);
   // Initialize a state variable redirect with a default value of null, which will be used for redirection.
+  const [username, setUsername] = useState('');
+
+
+  const navigate = useNavigate();
 
   const login = (redirectTo) => {
     // Define a login function that takes a redirect to  parameter.
@@ -24,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout, redirect }}>
+    <AuthContext.Provider value={{ isAuthenticated, login, logout, redirect, username }}>
       {/* Provide the AuthContext with the authentication state and functions as the value to its children. */}
       {children}
       {/* Render the child components that are wrapped by the provider. */}

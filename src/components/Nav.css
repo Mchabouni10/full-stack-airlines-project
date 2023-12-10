@@ -62,20 +62,6 @@
   border-radius: 50%;
 }
 
-/* .display {
-  background-color: #fff;
-  margin-right: 5%;
-  margin-left: 5%;
-  text-align: center;
-}
-
-strong {
-  color: #fff;
-} */
-
-/* .content {
-  padding: 16px;
-} */
 
 .sticky {
   position: fixed;
@@ -84,11 +70,6 @@ strong {
   z-index: 100;
   margin-bottom: 0;
 }
-
-/* .sticky + .content {
-  padding-top: 60px;
-} */
-
 
 
 
@@ -172,9 +153,6 @@ strong {
     margin-bottom: 0;
   }
   
-  /* .sticky + .content {
-    padding-top: 40px;
-  } */
 
 
 }
@@ -252,5 +230,3 @@ strong {
 
   
 }
-
-
