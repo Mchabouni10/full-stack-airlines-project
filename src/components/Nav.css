@@ -7,7 +7,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-ul {
+#nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -17,7 +17,7 @@ ul {
   align-items: center; 
 }
 
-ul li a {
+#nav ul li a {
   position: relative; 
   display: flex;
   width: auto;
@@ -29,7 +29,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a::before {
+#nav ul li a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -39,12 +39,12 @@ ul li a::before {
   z-index: -1;
 }
 
-ul li a:hover::before {
+#nav ul li a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #33a1ff;
 }
 
-ul li a:hover {
+#nav ul li a:hover {
   color: #33a1ff;
   box-shadow: 0 0 5px #33a1ff;
   text-shadow: 0 0 5px #33a1ff;
@@ -89,6 +89,11 @@ strong {
   padding-top: 60px;
 } */
 
+
+
+
+
+
 /*================ Using Media querry for tablet responsivness ====================*/
 @media screen and (max-width: 768px) {
 
@@ -101,7 +106,7 @@ strong {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
 
-  ul {
+  #nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -111,7 +116,7 @@ strong {
     align-items: center; 
   }
   
-  ul li a {
+  #nav ul li a {
     position: relative; 
     display: flex;
     width: auto;
@@ -124,7 +129,7 @@ strong {
   }
   
   
-  ul li a::before {
+  #nav ul li a::before {
     content: '';
     position: absolute;
     font-size: 12px;
@@ -135,12 +140,12 @@ strong {
     z-index: -1;
   }
   
-  ul li a:hover::before {
+  #nav ul li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #333;
   }
   
-  ul li a:hover {
+  #nav ul li a:hover {
     color: #333;
     box-shadow: 0 0 5px #333;
     text-shadow: 0 0 5px #333;
@@ -186,9 +191,11 @@ strong {
     margin: 0;
     padding: 0.1%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the column */
   }
   
-  ul {
+  #nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -198,7 +205,7 @@ strong {
     align-items: center; 
   }
   
-  ul li a {
+  #nav ul li a {
     position: relative; 
     display: flex;
     width: auto;
@@ -210,7 +217,7 @@ strong {
     text-decoration: none;
   }
   
-  ul li a::before {
+  #nav ul li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -220,12 +227,12 @@ strong {
     z-index: -1;
   }
   
-  ul li a:hover::before {
+  #nav ul li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #33a1ff;
   }
   
-  ul li a:hover {
+  #nav ul li a:hover {
     color: #33a1ff;
     box-shadow: 0 0 5px #33a1ff;
     text-shadow: 0 0 5px #33a1ff;
@@ -242,4 +249,8 @@ strong {
     width: 30px; 
     border-radius: 50%;
   }
+
+  
 }
+
+

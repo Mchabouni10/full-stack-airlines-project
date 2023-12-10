@@ -34,6 +34,7 @@ const Nav = (props) => {
             alt="Compaby Logo"
           />
         </li>
+      
         <li>
           <Link to="/">HOME</Link>
         </li>
@@ -52,6 +53,7 @@ const Nav = (props) => {
           </a>
         </li>
       </ul>
+     
     </nav>
   );
 };
