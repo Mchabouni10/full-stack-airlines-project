@@ -29,12 +29,12 @@ This project is designed to showcase information about various aviation such Air
 ## Layout
 ### Screenshots
 Include screenshots of different sections or pages of your project.
-![HomePage top](home-pagetop.png)
-![HomePage middle 1](home-middle1.png)
-![HomePage middle 2](home-middle2.png)
-![HomePage middle 3](home-middle3.png)
-![HomePage footer](footerScreenShot.png)
-![Login Page](LoginScreen.png)
+![HomePage top](./images/home-pagetop.png)
+![HomePage middle 1](./images/home-middle1.png)
+![HomePage middle 2](./images/home-middle2.png)
+![HomePage middle 3](./images/home-middle3.png)
+![HomePage footer](./images/footerScreenShot.png)
+![Login Page](./images/LoginScreen.png)
 
 
 ## Features
