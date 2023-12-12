@@ -20,8 +20,10 @@
     margin-bottom: 0%;
   }
 
-  .footer-section ul li{
-    font-size: 18px;
+  .footer-section ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
   }
 
 
@@ -30,7 +32,7 @@
     padding-left: 3%;
   }
 
-  .footer-section ul li:hover {
+  .footer-section ul li a:hover {
     color: #33a1ff; 
     cursor: pointer;
   }

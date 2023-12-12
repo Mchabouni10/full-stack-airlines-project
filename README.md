@@ -15,13 +15,25 @@ Welcome to the Aviation Info project! This comprehensive platform offers extensi
 
 
 ## Note
-Note: This project is part of a comprehensive training cohort website. All images and concepts utilized are unrelated to any specific organization or advertising service. The selection of images was driven by the sole purpose of enhancing the user interface (UI) of the project, with no intention of promoting or endorsing any particular company or commercial entity.
+Note: This project is part of a comprehensive training cohort website. All images and concepts utilized are unrelated to any specific organization or advertising service. The selection of images was driven by the sole purpose of enhancing the user interface (UI) of the project, with no intention of promoting or endorsing any particular company 
+or commercial entity.
 
 
 
 ## Introduction
 
 This project is designed to showcase information about various aviation such Airports, Airlines Company, and Aircrafts manufcturer with different models, and  professionals, including pilots, engineers, technicians, and more. The website is builded with different technologies using routes and hooks as most. Also the way to implement an API in the website and the importance of it. 
+
+
+
+## Layout
+### Screenshots
+Include screenshots of different sections or pages of your project. You can use a dedicated folder in your project to store these screenshots.
+![HomePage top](./home-pagetop.png)
+![HomePage middle](./home-middle1.png)(./home-middle2.png)(./home-middle3.png)
+![HomePage footer](./footerScreenShot.png)
+![Login Page](./LoginScreen.png)
+
 
 ## Features
 

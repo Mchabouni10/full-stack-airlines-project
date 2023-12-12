@@ -35,7 +35,7 @@ const AirlinesDetails = () => {
   };
 
   useEffect(() => {
-    //it triggers the fetchAirlineData function when the component mounts
+    
     fetchAirlineData();
   }, []);
 

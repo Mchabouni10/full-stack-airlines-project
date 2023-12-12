@@ -8,9 +8,19 @@ function Footer() {
     <div className="footer-section">
       <h3>About Us</h3>
       <ul >
-        <li>Learn about Airplanes</li>
-        <li>Learn About Engines</li>
-        <li>Learn about the Speed</li>
+        <li>
+          <Link to="/Aboutme">Learn about me</Link>
+        </li>
+        <li>
+        <a href="https://www.linkedin.com/in/mouloud-chabouni/" target="_blank" rel="noopener noreferrer">
+          My LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Mchabouni10" target="_blank" rel="noopener noreferrer">
+          My GitHub
+        </a>
+      </li>
         <li>Safety</li>
         <li>Sustainability</li>
         <li>Enjoy Flying</li>
