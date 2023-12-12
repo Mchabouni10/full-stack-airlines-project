@@ -30,9 +30,9 @@ This project is designed to showcase information about various aviation such Air
 ### Screenshots
 Include screenshots of different sections or pages of your project.
 ![HomePage top](./Images/home-pagetop.png)
-![HomePage middle 1](./Images/home-middle1.png)
-![HomePage middle 2](./Images/home-middle2.png)
-![HomePage middle 3](./Images/home-middle3.png)
+![HomePage middle 1](./Images/home-pagemiddle1.png)
+![HomePage middle 2](./Images/home-pagemiddle2.png)
+![HomePage middle 3](./Images/home-pagemiddle3.png)
 ![HomePage footer](./Images/footerScreenShot.png)
 ![Login Page](./Images/LoginScreen.png)
 
