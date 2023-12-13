@@ -8,7 +8,10 @@ body{
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-@font-face {
+
+/* === =====*/
+
+@font-face { 
   font-family: 'Ubuntu Condensed';
   src: url('../public/UbuntuCondensed-Regular.ttf') format('truetype');
 }
