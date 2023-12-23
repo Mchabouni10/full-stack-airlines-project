@@ -1,6 +1,8 @@
 import React from "react";
 import Slideshow from "../components/Slideshow";
 import Airplanefood from "../components/Airplanefood";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlane } from "@fortawesome/free-solid-svg-icons";
 import "./MainPage.css";
 
 
@@ -41,7 +43,7 @@ const MainPage = () => {
         <div className="Second-part-homepage">
           <img className="entertainImage" src="entertain.png" alt="Entertain"/>
           <div className="textcontainer">
-          <h2 className="nonStop">NON-STOP FLIGHTS</h2>
+          <h2 className="nonStop">NON-STOP FLIGHTS{' '}{' '}{' '}<FontAwesomeIcon icon={faPlane} style={{color: "#ffffff",}} /></h2>
           <h2 className="fly">ENJOY A MOVIE WHILE FLYING</h2>
           <p className="LoremP">Movies, Games and Music, Dicover the world while entertaining</p>
           </div>

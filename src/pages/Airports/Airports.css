@@ -1,16 +1,20 @@
 .AirportContainer{
-    margin-top: 90px;
-    margin-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+  margin: .5%;
 }
 
 .submitAirport {
+  display: flex;
     text-align: center;
-    margin-top: 20px;
+    margin: 1%;
   }
   
   .inputAirport {
     width: 500px; 
-    padding: 10px;
+    padding: 2%;
     font-size: 16px;
     border: 1px solid #ccc;
     font: white;
@@ -19,7 +23,7 @@
   }
   
   .submitAirport input[type="submit"] {
-    padding: 10px 20px;
+    padding: 2px 24px;
     font-size: 16px;
     background-color: #333;
     color: white;
@@ -31,38 +35,28 @@
   .submitAirport
    input[type="submit"]:hover {
     color: #333;
-    background-color:gray;
+    background-color:#33a1ff;
   }
 
 
   /*======================== CSS FOR AIRPORT DETAILS ============================*/
 
   .displayAirportsDetails {
-    margin-top: 100px; 
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+  }
+
+  .displayAirportsDetails h1 {
+    margin-top: 1%;
+    margin-bottom: 0;
+    text-align: center;
   }
   
-  .airport-container {
-    position: relative;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 50px;
-  }
-  
-  .airport-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1561131668-f63504fc549d?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    opacity: 0.7; 
-  }
   
   .airport-name {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
     position: relative; 
@@ -83,30 +77,34 @@
     z-index: 1; 
   }
 
-
-
-
-  .displayAirportsDetails {
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-  }
   
   .selected-airport-details {
-    margin-top: 1%;
-    padding: 20px;
-    width: 70%;
-    border: 1px solid #ccc;
+    display: flex;
+    min-width: 98%;
+    flex-direction: column;
+    position: relative;
+    margin: 0.5%;
+    background-image: url('https://images.unsplash.com/photo-1570114581742-586696237de1?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: contain;
     border-radius: 8px;
-    background-image: url('https://images.unsplash.com/photo-1561131668-f63504fc549d?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .selected-airport-details::before{
+ content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px; 
+  z-index: 2;
+  }
+
   
   .selected-airport-details h2 {
-    color: white;
+    color: #33a1ff;
     text-align: center;
   }
   
@@ -115,12 +113,13 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
   
-  select {
-    margin-top: 20px;
-    padding: 10px;
+  .displayAirportsDetails select {
+    padding: .2%;
     font-size: 20px;
+    min-width: 400px;
   }
   
   .selected-airport-details h1 {

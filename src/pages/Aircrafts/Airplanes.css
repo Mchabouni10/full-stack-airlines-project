@@ -1,25 +1,30 @@
-
 .AirplanesList {
-  max-width: 400px;
-  min-height: 420px;
-  margin-top: 7%;
-  margin-left: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
 }
 
+.AirplaneForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.airplaneLebel,
+.airplaneLabel,
 label {
   display: block;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .airplanesSelect {
-  width: 100%;
-  padding: 8px;
+  width: 500px;
+  padding: 2%;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 10px;
 }
 
 .SubmitButtonAirplanePage {
@@ -41,17 +46,12 @@ label {
 
 
 .AirplaneDetailes {
-  position: relative; 
-  margin-top: 90px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 20px;
+  position: relative;
+  margin: 0.5%;
   background-image: url('https://plus.unsplash.com/premium_photo-1661934254089-24e0d14302ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWlycGxhbmUlMjBwYXJ0c3xlbnwwfHwwfHx8MA%3D%3D');
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden; 
 }
 
 .AirplaneDetailes::before {
@@ -61,8 +61,17 @@ label {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.6); 
-  z-index: 1; 
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px; 
+  z-index: 1;
+}
+
+
+.AirplaneDetailes h1 {
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+  margin: 1%;
 }
 
 .aircraft-container {
@@ -70,24 +79,23 @@ label {
   z-index: 2; 
   margin-top: 15px;
   text-align: center;
+  padding: 2%;
 }
 
 .aircraft-container h1 {
   text-align: center;
   font-size: 29px;
-  margin: 10px 0;
   color: rgb(7, 0, 0);
   font-weight: bold;
 }
 
-span {
+.aircraft-container span {
   font-weight: bold;
   color: #3498db;
 }
 
 .no-results{
-  margin-top: 20%;
-  margin-bottom: 20%;
+  text-align: center;
 }
 
 

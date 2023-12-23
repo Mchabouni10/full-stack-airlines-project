@@ -1,31 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = (props) => {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const navbar = document.getElementById("nav");
-    const sticky = navbar.offsetTop;
-
-    const handleScroll = () => {
-      if (window.pageYOffset >= sticky) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <nav id="nav" className={isSticky ? "sticky" : ""}>
+    <nav id="nav">
       <ul>
         <li>
           <img
@@ -48,15 +29,15 @@ const Nav = (props) => {
           <Link to="/airports">AIRPORTS</Link>
         </li>
         <li>
-          <a href="/login">
-            <img className="LoginLogo" src="loginlogo.png" alt="Company Logo" />
+          <a className='UserIcon' href="/login">
+            <FontAwesomeIcon icon={faUser}/>
           </a>
         </li>
       </ul>
-     
     </nav>
   );
 };
 
 export default Nav;
+
 

@@ -1,10 +1,10 @@
 #nav {
-  
   background-color: #333;
-  border-radius: 1px;
-  margin: 0;
-  padding: 0.1%;
+  padding: 1.2%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #nav ul {
@@ -12,64 +12,37 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin-right: 10%;
-  margin-left: 10% ;
-  align-items: center; 
+  margin: 0 10%;
+  align-items: center;
 }
 
 #nav ul li a {
-  position: relative; 
-  display: flex;
-  width: auto;
-  height: auto;
   text-align: center;
   font-size: 25px;
   color: white;
-  transition: .5s;
   text-decoration: none;
-}
-
-#nav ul li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: .5s;
-  transform: scale(.9);
-  z-index: -1;
-}
-
-#nav ul li a:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #33a1ff;
 }
 
 #nav ul li a:hover {
   color: #33a1ff;
-  box-shadow: 0 0 5px #33a1ff;
-  text-shadow: 0 0 5px #33a1ff;
+}
+
+.UserIcon {
+  color: white;
+  transition: .5s;
+}
+
+.UserIcon:hover {
+  color: #33a1ff;
 }
 
 .CompanyLogo {
-  height: 30px; 
-  width: auto; 
+  height: 30px;
+  width: auto;
   border-radius: 20px;
 }
 
-.LoginLogo {
-  height: 30px; 
-  width: 30px; 
-  border-radius: 50%;
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  margin-bottom: 0;
-}
 
 
 

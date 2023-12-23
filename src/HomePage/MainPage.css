@@ -1,7 +1,7 @@
 .MainPage{
     text-align: center;
     color: #333;
-    margin-top: 70px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -10,9 +10,7 @@
   .nav2 {
     background-color: white;
     border-radius: 1px;
-    margin: 0;
-    padding-top: 0.2%;
-    padding-bottom: 0.1%;
+    margin-top: 0;
     margin-bottom: 0.5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
@@ -21,6 +19,8 @@
     color: #333;
     font-style: italic;
     font-size: 20px;
+    padding: .4%;
+    margin: 0;
   }
 
   .imagesContainer {

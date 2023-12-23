@@ -47,8 +47,8 @@ const AirplanesDetails = () => {
     return (
       // display the Airplane Details like name, manufacturer and so on 
       <div className="AirplaneDetailes">
-        <h1>Aircraft Info</h1>
         <div className="aircraft-container">
+        <h1>Aircraft Info</h1>
           <h1>
             manufacturer: <span>{details?.manufacturer}</span> 
           </h1>

@@ -54,7 +54,7 @@ function AirportsDetails() {
         </select>
         {selectedAirport && (
           <div className="selected-airport-details">
-            <h2>Selected Airport Details</h2>
+            <h2>{selectedAirport.name}</h2>
             <p>ICAO: {selectedAirport.icao}</p>
             <p>IATA: {selectedAirport.iata}</p>
             <p>City: {selectedAirport.city}</p>

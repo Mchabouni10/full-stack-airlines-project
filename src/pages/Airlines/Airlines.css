@@ -1,16 +1,17 @@
-/*==================== CSS for Airlines Search ====================*/
-.AirlinesContainer{
-    margin-top: 90px;
-    margin-bottom: 400px;
-}
 
+.AirlinesContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+}
 
 .submitAirlines {
     text-align: center;
-    margin-top: 20px;
-  }
+    margin-top: 2%;
+}
   
-  .inputAirlines {
+.inputAirlines {
     width: 500px; 
     padding: 10px;
     font-size: 16px;
@@ -18,7 +19,7 @@
     font: white;
     border-radius: 5px;
     margin-right: 10px;
-  }
+}
   
   .SubmitButtonAirlines {
     padding: 10px 20px;
@@ -38,14 +39,12 @@
   
   /*===================== CSS Airlines Details  =========================*/
   .displayAirlinesDEtailes {
-    /* display: inline; */
-    text-align: center;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 460px;
   }
-  .display {
-    margin-top: 50px;
 
-  }
   
   .display h1 {
     color: #333;
@@ -53,12 +52,13 @@
   }
   
   .airline-container {
-    padding: 20px;
     border: 1px solid #333;
     border-radius: 8px;
     background-color: #f9f9f9;
     opacity: .8;
-    margin: 1%;
+    margin: .5%;
+    text-align: center;
+    min-width: 98%;
   }
   
   .airline-name {
@@ -83,7 +83,7 @@
   }
   
   .fleet-info {
-    margin-top: 20px;
+    margin:2%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -102,26 +102,16 @@
   }
   
   .fleet-info li {
-    margin-bottom: 5px;
-    margin-right: 20px; 
+    margin-bottom: 1%;
+    margin-right: 2%; 
     white-space: nowrap; 
   }
   
   .fleet-info li span {
-    margin-left: 5px; 
+    margin-left: 1%; 
     color: red;
     font-weight: bold;
   }
-
-
-
-
-
-
-
-
-
-
 
 
   @media screen and (max-width: 768px) {
