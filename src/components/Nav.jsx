@@ -11,7 +11,7 @@ const Nav = (props) => {
         <li>
           <img
             className="CompanyLogo"
-            src="companyLogo.png"
+            src="logo-no-background.png"
             alt="Compaby Logo"
           />
         </li>
