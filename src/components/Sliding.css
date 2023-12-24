@@ -77,9 +77,9 @@
               content: '';
               background: white;
               color: white;
-              height: 2px;
+              height: 3px; 
               width: 30px;
-              border-radius: 0;
+              border-radius: 3px;
               position: absolute;
               top: 50%;
               right: 0;
