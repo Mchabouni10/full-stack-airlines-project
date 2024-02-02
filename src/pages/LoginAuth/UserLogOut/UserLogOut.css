@@ -1,0 +1,28 @@
+.user-logout {
+  font-size: 3vmin;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  }
+  
+  .user-logout-icon {
+    font-size: 3vmin;
+    margin-left: 2.5vmin;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  .signin-button{
+    color: #ffffff;
+    background-color: transparent;
+    margin-top: 0;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  .faUser-icon {
+   margin-right: 1vmin;
+   font-size: 4vmin;
+  }
+

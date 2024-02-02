@@ -1,10 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import "./Nav.css";
+import * as userService from "../../utilities/users-service";
+import UserLogOut from "../../pages/LoginAuth/UserLogOut/UserLogOut";
 
-const Nav = (props) => {
+const Nav = ({ user, setUser }) => {
+
+
+
   return (
     <nav id="nav">
       <ul>
@@ -29,9 +34,7 @@ const Nav = (props) => {
           <Link to="/airports">AIRPORTS</Link>
         </li>
         <li>
-          <a className='UserIcon' href="/login">
-            <FontAwesomeIcon icon={faUser}/>
-          </a>
+        <UserLogOut user={user} setUser={setUser} />
         </li>
       </ul>
     </nav>

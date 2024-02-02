@@ -1,7 +1,7 @@
 import React from "react";
-import Slideshow from "../components/Slideshow";
-import Sliding from "../components/Sliding";
-import Airplanefood from "../components/Airplanefood";
+import Slideshow from "../components/Slideshow/Slideshow";
+import Sliding from "../components/Sliding/Sliding";
+import Airplanefood from "../components/Airplanefood/Airplanefood";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
 import "./MainPage.css";
