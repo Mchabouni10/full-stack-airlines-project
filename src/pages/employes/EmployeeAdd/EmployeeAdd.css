@@ -1,0 +1,46 @@
+.employee-add-container {
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-y: auto;
+    height: 400px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px; 
+  }
+  
+  .employee-add-title{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .employee-add-container form {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+  
+  .employee-add-container label {
+    font-weight: bold;
+  }
+  
+  .employee-add-container input {
+    padding: 8px;
+    font-size: 14px;
+    color: black;
+    width: 98%; 
+    margin-right: 15px;
+  }
+  
+  .employee-add-button {
+    align-items: center;
+    background-color: #33a1ff;
+    width: 100%;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

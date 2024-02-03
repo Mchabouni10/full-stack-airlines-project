@@ -1,0 +1,75 @@
+.employee-page-under-staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 40px auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.employee-page-under-staff h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.add-new-employee {
+  align-self: flex-start;
+  text-decoration: none;
+  color: #33a1ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+
+.employee-table th,
+.employee-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.employee-table th {
+  background-color: #33a1ff;
+  font-weight: 600;
+}
+
+.employee-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.employee-delete-button{
+  border: transparent;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-left:25px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
