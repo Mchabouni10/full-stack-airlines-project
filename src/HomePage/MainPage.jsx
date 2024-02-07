@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Slideshow from "../components/Slideshow/Slideshow";
 import Sliding from "../components/Sliding/Sliding";
 import Airplanefood from "../components/Airplanefood/Airplanefood";
@@ -45,7 +46,7 @@ const MainPage = () => {
           <img className="entertainImage" src="entertain.png" alt="Entertain"/>
           <div className="textcontainer">
           <h2 className="nonStop">NON-STOP FLIGHTS{' '}<FontAwesomeIcon icon={faPlane} style={{color: "#ffffff",}} /></h2>
-          <h2 className="fly">ENJOY A MOVIE WHILE FLYING</h2>
+          <Link className="check-movies-homepage" to="/airlines-movies">Check Movies</Link>
           <p className="LoremP">Movies, Games and Music, Dicover the world while entertaining</p>
           </div>
         </div>

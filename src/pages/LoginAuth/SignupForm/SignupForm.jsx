@@ -73,7 +73,7 @@ const SignUpForm = ({ setUser, toggleForm }) => {
             SIGN UP
           </button>
           <p>
-            Already have an account? <Link to="#" onClick={toggleForm}>Log In</Link>
+            Already have an account? <Link  className='link-login' to="#" onClick={toggleForm}>Log In</Link>
           </p>
         </form>
       </div>

@@ -1,34 +1,46 @@
 .login-container{
-    margin-top: 10%;
-    margin-left: 40%;
+min-height: 500px;
 }
 
 .login-container form {
-    max-width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 5% auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .login-container label {
+.login-container label {
     display: block;
     margin-bottom: 8px;
+    color: #333;
   }
 
   .login-container input {
-    width: 100%;
+    width: 400px;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
   }
 
-  .login-container p{
+  .login-container p {
     text-align: center;
-    margin-right: 60%;
+  }
+  
+  .link-signup {
+    color: #33a1ff;
+  }
+
+  .error-message {
+    color: red;
   }
 
   .login-container button {
+    text-align: center;
     background-color: #333;
     color: #fff;
     padding: 10px;

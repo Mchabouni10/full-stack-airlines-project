@@ -1,12 +1,11 @@
 .employee-edit-container {
-    max-width: 600px;
-    margin: 20px auto;
-    overflow-y: auto;
-    height: 400px;
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1% auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
   }
   
   .employee-edit-header {

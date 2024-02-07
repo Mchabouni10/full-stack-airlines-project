@@ -1,16 +1,20 @@
 // EmployeeIndex.jsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faPenToSquare, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faPenToSquare, faSquareXmark } from '@fortawesome/free-solid-svg-icons';
 import './EmployeeIndex.css';
 
 const EmployeeIndex = () => {
   const [employees, setEmployees] = useState([]);
+  const [sortConfig, setSortConfig] = useState({
+    key: null,
+    direction: 'ascending',
+  });
 
   useEffect(() => {
     fetchEmployees();
-  }, []);
+  }, [sortConfig]);
 
   const fetchEmployees = async () => {
     try {
@@ -19,10 +23,38 @@ const EmployeeIndex = () => {
         throw new Error('Failed to fetch employees');
       }
       const data = await response.json();
-      setEmployees(data);
+      const sortedData = sortData(data, sortConfig.key, sortConfig.direction);
+      setEmployees(sortedData);
     } catch (error) {
       console.error('Error fetching employees:', error.message);
     }
+  };
+
+  const sortData = (data, key, direction) => {
+    if (!key) {
+      return data;
+    }
+
+    const sortedData = [...data];
+    sortedData.sort((a, b) => {
+      if (a[key] < b[key]) {
+        return direction === 'ascending' ? -1 : 1;
+      }
+      if (a[key] > b[key]) {
+        return direction === 'ascending' ? 1 : -1;
+      }
+      return 0;
+    });
+
+    return sortedData;
+  };
+
+  const requestSort = (key) => {
+    let direction = 'ascending';
+    if (sortConfig.key === key && sortConfig.direction === 'ascending') {
+      direction = 'descending';
+    }
+    setSortConfig({ key, direction });
   };
 
   const handleDeleteEmployee = async (id) => {
@@ -44,15 +76,23 @@ const EmployeeIndex = () => {
   };
 
   return (
-    <div className='employee-page-under-staff'>
-      <Link to="/add" className='add-new-employee'>Add<FontAwesomeIcon icon={faPlus} /> New Employee</Link>
+    <div className="employee-page-under-staff">
+      <Link to="/staff/add" className="add-new-employee">
+        Add<FontAwesomeIcon icon={faPlus} /> New Employee
+      </Link>
       <h1>Employee List</h1>
-      <table className='employee-table'>
+      <table className="employee-table">
         <thead>
           <tr>
-            <th>Employee ID</th>
-            <th>Name</th>
-            <th>Position</th>
+            <th onClick={() => requestSort('employeeId')}>
+              Employee ID {sortConfig.key === 'employeeId' && <span>{sortConfig.direction === 'ascending' ? '↑' : '↓'}</span>}
+            </th>
+            <th onClick={() => requestSort('name')}>
+              Name {sortConfig.key === 'name' && <span>{sortConfig.direction === 'ascending' ? '↑' : '↓'}</span>}
+            </th>
+            <th onClick={() => requestSort('position')}>
+              Position {sortConfig.key === 'position' && <span>{sortConfig.direction === 'ascending' ? '↑' : '↓'}</span>}
+            </th>
             <th>Details</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -65,13 +105,17 @@ const EmployeeIndex = () => {
               <td>{employee.name}</td>
               <td>{employee.position}</td>
               <td>
-                <Link to={`/staff/${employee._id}`}>View Details</Link>
-                </td>
-                <td>
-                <Link to={`/edit/${employee._id}`}><FontAwesomeIcon icon={faPenToSquare} /></Link>
-                </td>
-                <td>
-                <button className='employee-delete-button' onClick={() => handleDeleteEmployee(employee._id)}><FontAwesomeIcon icon={faSquareXmark} /></button>
+                <Link className='view-details-index' to={`/staff/${employee._id}`}>View Details</Link>
+              </td>
+              <td>
+                <Link className="employee-edit-link" to={`/staff/edit/${employee._id}`}>
+                  <FontAwesomeIcon icon={faPenToSquare} />
+                </Link>
+              </td>
+              <td>
+                <button className="employee-delete-button" onClick={() => handleDeleteEmployee(employee._id)}>
+                  <FontAwesomeIcon icon={faSquareXmark} />
+                </button>
               </td>
             </tr>
           ))}
@@ -82,5 +126,6 @@ const EmployeeIndex = () => {
 };
 
 export default EmployeeIndex;
+
 
 

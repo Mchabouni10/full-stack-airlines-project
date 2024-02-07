@@ -292,9 +292,21 @@
     margin-top:1%; 
     color : black
   }
+
+
   .LoremP{
     text-align: left;
     color: red;
+  }
+
+  .check-movies-homepage {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #33a1ff;
+    background-size: cover;
+    padding: 10px;
+    cursor: pointer;
   }
 
   

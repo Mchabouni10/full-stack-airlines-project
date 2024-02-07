@@ -1,6 +1,8 @@
 // EmployeeShow.jsx
 import React, { useEffect, useState} from 'react';
 import { useParams,Link  } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import './EmployeeShow.css';
 
 const EmployeeShow = () => {
@@ -38,8 +40,8 @@ const EmployeeShow = () => {
 
   return (
     <div className='employee-details-container'>
-       <div>
-      <Link to="/staff" className="employee-back-button">Back to Employee List</Link>
+    <div>
+      <Link to="/staff" className="employee-back-button"><FontAwesomeIcon icon={faCircleLeft} />Back to Employee List</Link>
     </div>
       <h1>Employee Details</h1>
       <div className='employee-details-card'>
@@ -47,12 +49,12 @@ const EmployeeShow = () => {
           <div className='employee-details-content'>
             {employee.image ? <img src={employee.image} alt={employee.name} /> : <p>No image available</p>}
             <h2>{employee.name}</h2>
-            <p>Position: {employee.position}</p>
-            <p>Duty: {employee.duty}</p>
-            <p>Field: {employee.field}</p>
-            <p>Average Salary: {employee.averageSalary}</p>
-            <p>Duty Details: {employee.dutyDetails}</p>
-            <p>Email: {employee.email}</p>
+            <p>Position: <span>{employee.position}</span></p>
+            <p>Duty:<span>{employee.duty}</span></p>
+            <p>Field: <span>{employee.field}</span></p>
+            <p>Average Salary: <span>{employee.averageSalary}</span></p>
+            <p>Duty Details: <span>{employee.dutyDetails}</span></p>
+            <p>Email:<span>{employee.email}</span></p>
           </div>
         ) : (
           <p>No employee data available</p>

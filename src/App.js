@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 import Nav from "./components/Navbar/Nav";
 import MainPage from "./HomePage/MainPage";
 import Airlines from "./pages/Airlines/Airlines";
@@ -13,8 +13,17 @@ import EmployeeIndex from "./pages/employes/EmployeeIndex/EmployeeIndex";
 import EmployeeShow from "./pages/employes/EmployeeShow/EmployeeShow";
 import EmployeeAdd from './pages/employes/EmployeeAdd/EmployeeAdd'
 import EmployeeEdit from './pages/employes/EmployeeEdit/EmployeeEdit'
+import AirportIndex from "./pages/AirportChoice/AirportIndex/AirportIndex";
+import AirportShow from "./pages/AirportChoice/AirportShow/AirportShow";
 import AuthPage from "./pages/LoginAuth/AuthPage/AuthPage";
 import { getUser } from "./utilities/users-service";
+import MoviesIndex from "./pages/Movies/MoviesIndex/MoviesIndex";
+import MoviesShow from "./pages/Movies/MoviesShow/MoviesShow";
+import MoviesAdd from "./pages/Movies/MoviesAdd/MoviesAdd";
+import MoviesEdit from "./pages/Movies/MoviesEdit/MoviesEdit";
+
+
+
 
 const App = () => {
   const [user, setUser] = React.useState(getUser());
@@ -49,12 +58,22 @@ const App = () => {
         />
         <Route path="/staff" element={requireAuth(<EmployeeIndex />)} />
         <Route path="/staff/:id" element={requireAuth(<EmployeeShow />)} />
-        <Route path="/add" element={requireAuth(<EmployeeAdd />)} />
-        <Route path="/edit/:id" element={requireAuth(<EmployeeEdit />)} />
+        <Route path="/staff/add" element={requireAuth(<EmployeeAdd />)} />
+        <Route path="/staff/edit/:id" element={requireAuth(<EmployeeEdit />)} />
+
+
+        <Route path="/airports-choice" element={requireAuth(<AirportIndex />)} />
+        <Route path="/airports-choice/:id" element={requireAuth(<AirportShow />)} />
         <Route
           path="/login"
           element={<AuthPage user={user} setUser={setUser} />}
         />
+
+
+        <Route path="/airlines-movies" element={requireAuth(<MoviesIndex />)} />
+        <Route path="/airlines-movies/:id" element={requireAuth(<MoviesShow />)} />
+        <Route path="/airlines-movies/add" element={requireAuth(<MoviesAdd />)} />
+        <Route path="/airlines-movies/edit/:id" element={requireAuth(<MoviesEdit />)} />
       </Routes>
       <Footer />
     </div>

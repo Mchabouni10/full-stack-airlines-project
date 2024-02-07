@@ -66,7 +66,7 @@ const LoginForm = ({ setUser, toggleForm }) => {
           </div>
           <button className="Login-Out-Button" type="submit">LOG IN</button>
           <p>
-            Don't have an account? <Link to="#" onClick={toggleForm}>Sign Up</Link>
+            Don't have an account? <Link className="link-signup" to="#" onClick={toggleForm}>Sign Up</Link>
           </p>
         </form>
         <p className="error-message">&nbsp;{error}</p>

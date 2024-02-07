@@ -24,7 +24,7 @@ function Footer() {
         <li>Safety</li>
         <li>Sustainability</li>
         <li>Enjoy Flying</li>
-        <li>Airport Choice</li>
+        <li><Link to="/airports-choice">Aiports choice</Link></li>
         <li>
           <Link to="/staff">Staff</Link>
         </li>

@@ -1,4 +1,4 @@
-.employee-details-container {
+.airport-show-container {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -8,14 +8,14 @@
     padding: 20px;
   }
   
-  .employee-details-container h1 {
+  .airport-show-header {
     font-size: 26px;
     font-weight: 600;
     text-align: center;
     margin-bottom: .5%;
   }
   
-  .employee-details-card {
+  .airport-show-details-choice {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -28,41 +28,31 @@
     text-decoration: none;
   }
   
-  .employee-details-card:hover {
+  .airport-show-details-choice:hover {
     background-color: #f0f0f0;
   }
   
-  .employee-details-content {
+  .airport-detail-item-choice {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     margin: 0%;
   }
   
-  .employee-details-content img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
+
   
-  .employee-details-content h2 {
-    margin-top: .2%;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .employee-details-content p {
+  .airport-details-label-choice {
     margin: 1%;
     color: #333;
   }
 
-  .employee-details-content span {
+  .airport-details-label-choice span {
     color: #33a1ff;
   }
   
-  .employee-back-button {
+  .Aiport-show-back-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -73,7 +63,7 @@
     margin-right: auto;
   }
   
-  .employee-back-button:hover {
+  .Aiport-show-back-button:hover {
     background-color: #e0e0e0;
     cursor: pointer;
   }

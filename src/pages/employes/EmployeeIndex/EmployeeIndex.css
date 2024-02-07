@@ -48,6 +48,13 @@
   background-color: #f0f0f0;
 }
 
+.view-details-index {
+  color: #33a1ff;
+}
+.view-details-index:hover {
+  color: #333;
+}
+
 .employee-delete-button{
   border: transparent;
   color: red;
@@ -55,6 +62,15 @@
   text-align: center;
   margin-left:25px;
   cursor: pointer;
+}
+.employee-edit-link{
+  border: transparent;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  margin-left:25px;
+  cursor: pointer;
+
 }
 
 

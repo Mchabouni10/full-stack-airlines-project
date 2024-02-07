@@ -23,6 +23,9 @@ const checkToken = require('./config/checkToken');
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/employees', checkToken, require('./routes/api/employees')); 
+app.use('/api/airports', checkToken, require('./routes/api/airports'));
+app.use('/api/movies', checkToken, require('./routes/api/movies'));
+
 
 // Catch-all route for serving React app
 app.get("/*", function (req, res) {
