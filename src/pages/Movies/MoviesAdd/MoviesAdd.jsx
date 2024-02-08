@@ -21,13 +21,25 @@ function MoviesAdd() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
+  
     // Special handling for nested attributes like awards and imdb
     if (name.includes('.')) {
       const [parent, child] = name.split('.');
       setFormData({
         ...formData,
         [parent]: { ...formData[parent], [child]: value },
+      });
+    } else if (name === 'genres') {
+      // Treat genres as an array
+      setFormData({
+        ...formData,
+        genres: value.split(',').map((genre) => genre.trim()),
+      });
+    } else if (name === 'cast' || name === 'directors' || name === 'writers' || name === 'countries') {
+      // Treat other fields as arrays
+      setFormData({
+        ...formData,
+        [name]: value.split(',').map((item) => item.trim()),
       });
     } else {
       setFormData({
@@ -36,6 +48,9 @@ function MoviesAdd() {
       });
     }
   };
+  
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

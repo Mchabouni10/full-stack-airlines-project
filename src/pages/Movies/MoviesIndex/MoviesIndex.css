@@ -22,13 +22,12 @@
 .pagination a {
   text-decoration: none;
   padding: 8px 12px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   color: #333;
   background-color: #33a1ff;
 }
 
-.pagination a.active {
+.pagination .active {
   color: #fff;
   background-color: #333;
 }
@@ -48,21 +47,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2.2vmin;
-  background-color: #333 ;
   list-style: none;
   padding: 0;
 }
 
-.back-way-icon {
-  margin-right: 1vmin;
-  font-size: 3vmin;
-  font-weight: bold;
-}
-
-.back-home-title {
-  margin: 0;
-  size: 5vmin;
-}
 
 
 
@@ -74,10 +62,13 @@
 }
 
 .no-poster-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%; 
   height: 420px;
   border-radius: 8px;
-  margin-bottom: 1px;
   background-color: #fff;
 }
 
@@ -86,44 +77,9 @@
   color: #fff;
   flex-grow: 1;
   text-decoration: none;
+  text-align: center;
   font-size: 3vmin;
-  margin: 2vmin;
-}
-
-.fontawesome-icons {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  margin: 0;
-  background-color: rgba(8, 7, 16, 0.5); 
-}
-
-.fontawesome-edit-icon {
-  border-radius: 5px;
-  font-size: 3vmin;
-  margin-right: 2vmin;
-  margin-top: .5vmin;
-  cursor: pointer;
-}
-
-.fontawesome-delete-icon {
-  border-radius: 5px;
-  font-size: 3vmin;
-  margin-right: 2vmin;
-  margin-top: .5vmin;
-  color: rgb(255, 0, 25);
-  cursor: pointer;
-}
-
-.link-home-page {
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-  margin-left: 2vmin;
-  font-size: 3vmin;
+  margin: .5vmin;
 }
 
 
@@ -186,10 +142,51 @@
 }
 
 .select-dropdown {
-  border: 2px solid red;
   margin-left: 2vmin;
   width: 30vmin;
   height: 5vmin;
+}
+
+
+.movies-items-container {
+  position: relative;
+  list-style: none;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.icon-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 0px 6px 0px 0px ;
+  font-size: 4vmin;
+}
+
+.icon-buttons a {
+  margin-right: 2vmin;
+  text-decoration: none;
+}
+
+.fa-eye {
+color: #33a1ff;
+}
+
+.fa-pen-to-square {
+color: #333;
+}
+
+.fa-trash {
+  color: red;
+}
+
+.fa-ban {
+  margin-top: 2vmin;
+  color: red;
+  font-size: 10vmin;
 }
 
 
