@@ -26,24 +26,13 @@ const index = async (req, res) => {
       query.year = parseInt(year, 10);
     }
 
-    console.log('Query:', query);
+    // If the 'year' parameter is not provided, sort by 'year' in descending order by default
+    const sortOptions = year ? {} : { year: -1 };
 
     const movies = await Movie.find(query)
+      .sort(sortOptions)
       .skip((page - 1) * limit)
       .limit(limit);
-
-    // Perform sorting in application code
-    const sortedMovies = movies.sort((a, b) => {
-      // Sort by title if release years are the same
-      if (a.year === b.year) {
-        return a.title.localeCompare(b.title);
-      }
-      // Sort by release year in ascending order
-      return a.year - b.year;
-    });
-
-    // Log the number of movies fetched
-    console.log('Number of Movies Fetched:', sortedMovies.length);
 
     const totalMovies = await Movie.countDocuments(query);
 
@@ -51,7 +40,7 @@ const index = async (req, res) => {
     const totalPages = Math.ceil(totalMovies / limit);
 
     res.json({
-      movies: sortedMovies,
+      movies,
       currentPage: page,
       totalPages,
       totalMovies,

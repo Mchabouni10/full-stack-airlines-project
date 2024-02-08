@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './MoviesEdit.css'
 
 function MoviesEdit() {
   const { id } = useParams();
   const [formData, setFormData] = useState({
+    poster: '',
     title: '',
     plot: '',
     genres: [],
@@ -16,7 +18,6 @@ function MoviesEdit() {
     imdb: { rating: 0, votes: 0, id: '' },
     countries: [],
     writers: [],
-    // Add other fields based on your movie schema
   });
 
   useEffect(() => {
@@ -80,9 +81,13 @@ function MoviesEdit() {
   };
 
   return (
-    <div>
+    <div className='movies-edit-container'>
       <h2>Edit Movie</h2>
       <form onSubmit={handleSubmit}>
+      <div>
+          <label>Poster:</label>
+          <input type="text" name="poster" value={formData.poster} onChange={handleChange} />
+        </div>
         <div>
           <label>Title:</label>
           <input type="text" name="title" value={formData.title} onChange={handleChange} />
@@ -178,7 +183,7 @@ function MoviesEdit() {
           />
         </div>
         {/* Add other fields based on your schema */}
-        <button type="submit">Save Changes</button>
+        <button className='movies-edit-button' type="submit">Save Changes</button>
       </form>
     </div>
   );

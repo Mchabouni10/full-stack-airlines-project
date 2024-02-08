@@ -99,7 +99,7 @@ function MoviesIndex() {
       <div className="pagination-container">
         <ReactPaginate
           pageCount={totalPages}
-          pageRangeDisplayed={5}
+          pageRangeDisplayed={6}
           marginPagesDisplayed={2}
           previousLabel={"Previous"}
           nextLabel={"Next"}
