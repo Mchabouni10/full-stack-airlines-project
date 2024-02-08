@@ -48,41 +48,7 @@ const Sliding = () => {
           $(".slideshow-text").slick("slickGoTo", nextSlide);
         }
       })
-    //   .on("mousewheel", function (event) {
-    //     // Check if the mousewheel event is directly on the slider
-    //     if ($(event.target).hasClass("slick-track")) {
-    //       event.preventDefault();
-    //       if (event.deltaX > 0 || event.deltaY < 0) {
-    //         $(this).slick("slickNext");
-    //       } else if (event.deltaX < 0 || event.deltaY > 0) {
-    //         $(this).slick("slickPrev");
-    //       }
-    //     }
-    //   })
-    //   .on("mousedown touchstart", function (event) {
-    //     dragging = true;
-    //     tracking = $(".slick-track", $slider).css("transform");
-    //     tracking = tracking && tracking.split ? parseInt(tracking.split(",")[5]) : 0;
-    //     rightTracking = $(".slideshow-right .slick-track").css("transform");
-    //     rightTracking = rightTracking && rightTracking.split ? parseInt(rightTracking.split(",")[5]) : 0;
-    //   })
-    //   .on("mousemove touchmove", function (event) {
-    //     if (dragging) {
-    //       var newTracking = $(".slideshow-left .slick-track").css("transform");
-    //       newTracking = newTracking && newTracking.split ? parseInt(newTracking.split(",")[5]) : 0;
-    //       if (tracking !== undefined && rightTracking !== undefined) {
-    //         var diffTracking = newTracking - tracking;
-    //         $(".slideshow-right .slick-track").css({
-    //           transform: "matrix(1, 0, 0, 1, 0, " + (rightTracking - diffTracking) + ")",
-    //         });
-    //       }
-    //     }
-    //   })
-    //   .on("mouseleave touchend mouseup", function (event) {
-    //     dragging = false;
-    //   });
-
-      // Right slider initialization
+  
       $(".slideshow-right .slider").slick({
         swipe: false,
         vertical: true,
@@ -152,14 +118,14 @@ const Sliding = () => {
       </div>
       <div className="slideshow-text">
         <div className="item">Boeing 777</div>
-        <div className="item">Desert</div>
-        <div className="item">Erosion</div>
+        <div className="item">FLY HEIGH</div>
+        <div className="item">777</div>
         <div className="item">Shape</div>
         <div className="item">O'Hare Airpot</div>
-        <div className="item">Desert</div>
+        <div className="item">SHARP</div>
         <div className="item">Singapore Airport</div>
         <div className="item">Enjoy The View</div>
-        <div className="item">Enjoy The View</div>
+        <div className="item">HEIGH IN THE SKY</div>
         <div className="item">Enjoy The View</div>
       </div>
     </div>
