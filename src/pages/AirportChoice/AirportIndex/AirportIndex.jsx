@@ -86,7 +86,7 @@ function AirportIndex() {
                 <Link to={`/airports-choice/${airport._id}`}>View Details</Link>
               </td>
               <td>
-                <button onClick={() => handleDelete(airport._id)}>Delete</button>
+                <button onClick={() => handleDelete(airport._id)}><i className="fas fa-trash"></i></button>
               </td>
             </tr>
           ))}
