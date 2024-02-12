@@ -16,7 +16,7 @@ const Nav = ({ user, setUser }) => {
         <li>
           <img
             className="CompanyLogo"
-            src="logo-no-background.png"
+            src="comlogo.png"
             alt="Compaby Logo"
           />
         </li>

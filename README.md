@@ -35,9 +35,12 @@ Include screenshots of different sections or pages of your project.
 ![HomePage middle 3](./Images/home-pagemiddle3.png)
 ![HomePage footer](./Images/footerScreenShot.png)
 ![Login Page](./Images/LoginScreen.png)
-
-
-## Features
+![different pages 1](./Images/sitescreen1.png)
+![different pages 2](./Images/sitescreen2.png)
+![different pages 3](./Images/sitescreen3.png)
+![different pages 4](./Images/sitescreen4.png)
+![different pages 5](./Images/sitescreen5.png)
+## Feature5
 
 - **Airlines Information**: Access comprehensive data about different airline companies, including their operational history, fleet details, and key statistics. Stay informed about the dynamic world of aviation companies.
 
